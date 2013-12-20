@@ -12,3 +12,5 @@ c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\Quiddi
 =======
 H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.exe.config
 >>>>>>> abf1cdc6ee31c04833015a10aa655e218bb753ac
+H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.exe
+H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.pdb
