@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    enum PosteJoueur
+    public enum PosteJoueur
     {
         None,
         Poursuiveur,

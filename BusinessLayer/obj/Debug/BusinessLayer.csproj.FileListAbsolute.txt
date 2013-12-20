@@ -7,3 +7,12 @@ c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\Busine
 c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
 c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
+H:\c#\quidditch\BusinessLayer\bin\Debug\BusinessLayer.dll
+H:\c#\quidditch\BusinessLayer\bin\Debug\BusinessLayer.pdb
+H:\c#\quidditch\BusinessLayer\bin\Debug\EntitiesLayer.dll
+H:\c#\quidditch\BusinessLayer\bin\Debug\StubDataAccessLayer.dll
+H:\c#\quidditch\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+H:\c#\quidditch\BusinessLayer\bin\Debug\StubDataAccessLayer.pdb
+H:\c#\quidditch\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+H:\c#\quidditch\BusinessLayer\obj\Debug\BusinessLayer.dll
+H:\c#\quidditch\BusinessLayer\obj\Debug\BusinessLayer.pdb

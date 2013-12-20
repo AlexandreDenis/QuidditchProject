@@ -68,7 +68,7 @@ namespace BusinessLayer
         public List<string> GetListeStades()
         {
             List<string> result = new List<string>();
-            
+            return result;
         }
     }
 }

@@ -76,5 +76,11 @@ namespace EntitiesLayer
             this.ScoreEquipeVisiteur = inSEV;
             this.Stade = inStade;
         }
+
+        public override string ToString()
+        {
+            String s = "coupe " + CoupeId + " prix " + Prix;
+            return s;
+        }
     }
 }

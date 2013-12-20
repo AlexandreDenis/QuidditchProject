@@ -14,3 +14,12 @@ H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.exe.config
 >>>>>>> abf1cdc6ee31c04833015a10aa655e218bb753ac
 H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.exe
 H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.pdb
+H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.csprojResolveAssemblyReference.cache
+H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.exe
+H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.pdb
+H:\c#\quidditch\QuidditchConsole\bin\Debug\BusinessLayer.dll
+H:\c#\quidditch\QuidditchConsole\bin\Debug\EntitiesLayer.dll
+H:\c#\quidditch\QuidditchConsole\bin\Debug\StubDataAccessLayer.dll
+H:\c#\quidditch\QuidditchConsole\bin\Debug\BusinessLayer.pdb
+H:\c#\quidditch\QuidditchConsole\bin\Debug\EntitiesLayer.pdb
+H:\c#\quidditch\QuidditchConsole\bin\Debug\StubDataAccessLayer.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    abstract class EntityObject
+    abstract public class EntityObject
     {
         private int _id;
         public int Id

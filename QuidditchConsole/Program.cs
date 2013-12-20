@@ -13,7 +13,12 @@ namespace QuidditchConsole
         static void Main(string[] args)
         {
             CoupeManager cp = new CoupeManager();
+            List<String> s = cp.GetListeMatchsCoupe(22);
 
+            foreach (String fs in s)
+                Console.WriteLine(fs);
+
+            int choix = int.Parse(Console.ReadLine());
 
             /*
             int choix = -1;
