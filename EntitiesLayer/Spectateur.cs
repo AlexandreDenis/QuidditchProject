@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Spectateur : Personne
+    public class Spectateur : Personne
     {
         private string _adresse;
         public string Adresse

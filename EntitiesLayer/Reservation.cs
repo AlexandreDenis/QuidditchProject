@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Reservation : EntityObject
+    public class Reservation : EntityObject
     {
         private Match _match;
         internal Match Match
