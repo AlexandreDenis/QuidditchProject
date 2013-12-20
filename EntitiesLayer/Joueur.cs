@@ -18,7 +18,7 @@ namespace EntitiesLayer
     public class Joueur : Personne
     {
         private PosteJoueur _poste;
-        internal PosteJoueur Poste
+        public PosteJoueur Poste
         {
             get { return _poste; }
             set { _poste = value; }

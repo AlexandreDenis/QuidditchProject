@@ -23,7 +23,7 @@ namespace EntitiesLayer
         }
 
         private Spectateur _spectateurId;
-        internal Spectateur Spectateur
+        public Spectateur Spectateur
         {
             get { return _spectateurId; }
             set { _spectateurId = value; }
