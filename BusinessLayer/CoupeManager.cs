@@ -47,7 +47,7 @@ namespace BusinessLayer
             return _manager.GetAllMatchs();
         }
 
-        /*affiche les liste des matchs prévus classés par date*/
+        /*retourne la liste des matchs prévus classés par date*/
         public List<string> GetListeMatchsCoupe(int inCoupeID)
         {
             List<string> result = new List<string>();
@@ -63,5 +63,7 @@ namespace BusinessLayer
 
             return result;
         }
+
+        /*
     }
 }
