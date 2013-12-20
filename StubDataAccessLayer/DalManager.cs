@@ -14,11 +14,11 @@ namespace StubDataAccessLayer
             List<Joueur> joueurs = new List<Joueur>();
 
             joueurs.Add(new Joueur(1, "nom1", "prenom1", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
-            joueurs.Add(new Joueur(2, "nom2", "prenom2", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
+            joueurs.Add(new Joueur(2, "nom2", "prenom2", DateTime.Now, PosteJoueur.Attrapeur, 2, 3));
             joueurs.Add(new Joueur(3, "nom3", "prenom3", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
-            joueurs.Add(new Joueur(4, "nom4", "prenom4", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
+            joueurs.Add(new Joueur(4, "nom4", "prenom4", DateTime.Now, PosteJoueur.Attrapeur, 2, 3));
             joueurs.Add(new Joueur(5, "nom5", "prenom5", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
-            joueurs.Add(new Joueur(6, "nom6", "prenom6", DateTime.Now, PosteJoueur.Poursuiveur, 2, 3));
+            joueurs.Add(new Joueur(6, "nom6", "prenom6", DateTime.Now, PosteJoueur.Attrapeur, 2, 3));
 
             return joueurs;
         }
