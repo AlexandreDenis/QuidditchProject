@@ -65,10 +65,38 @@ namespace BusinessLayer
         }
 
         /*retourne la liste des stades pour lesquels au moins un match est programmé*/
-        public List<string> GetListeStades()
+        public List<string> GetListeStades(int inCoupeID)
         {
             List<string> result = new List<string>();
-            
+            List<Match> matchs = this.GetMatchs();
+
+            if (matchs != null)
+            {
+                result = ((from x in matchs
+                          where x.CoupeId == inCoupeID
+                          orderby x.Stade.Id
+                          select x.Stade.ToString()).Distinct()).ToList();
+            }
+
+            return result;
+        }
+
+        /*retourne la liste des attrapeurs qui ont joués à domicile*/
+        public List<string> GetListeAttrapeursDomicile(int coupeID)
+        {
+            List<string> result = new List<string>();
+            List<Match> matches = GetMatchs();
+
+            if (matches != null)
+            {
+                result = ((from x in matches
+                           from y in x.EquipeDomicile.Joueurs
+                           where x.EquipeDomicile.CoupeID == coupeID && y.Poste == PosteJoueur.Attrapeur
+                           orderby y.Nom
+                           select y.ToString() + " => " + x.EquipeDomicile.ToString()).Distinct()).ToList();
+            }
+
+            return result;
         }
     }
 }

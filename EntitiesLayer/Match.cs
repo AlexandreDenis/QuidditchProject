@@ -23,14 +23,14 @@ namespace EntitiesLayer
         }
 
         private Equipe _equipeDomicile;
-        internal Equipe EquipeDomicile
+        public Equipe EquipeDomicile
         {
             get { return _equipeDomicile; }
             set { _equipeDomicile = value; }
         }
 
         private Equipe _equipeVisiteur;
-        internal Equipe EquipeVisiteur
+        public Equipe EquipeVisiteur
         {
             get { return _equipeVisiteur; }
             set { _equipeVisiteur = value; }
@@ -58,7 +58,7 @@ namespace EntitiesLayer
         }
 
         private Stade _stade;
-        internal Stade Stade
+        public Stade Stade
         {
             get { return _stade; }
             set { _stade = value; }
