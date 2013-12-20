@@ -68,16 +68,15 @@ namespace BusinessLayer
         public List<string> GetListeStades(int inCoupeID)
         {
             List<string> result = new List<string>();
-<<<<<<< HEAD
-=======
+
             List<Match> matchs = this.GetMatchs();
 
             if (matchs != null)
             {
-                result = ((from x in matchs
-                          where x.CoupeId == inCoupeID
-                          orderby x.Stade.Id
-                          select x.Stade.ToString()).Distinct()).ToList();
+                result = (from x in matchs
+                           where x.CoupeId == inCoupeID
+                           orderby x.Stade.Id
+                           select x.Stade.ToString()).Distinct().ToList();
             }
 
             return result;
@@ -91,14 +90,12 @@ namespace BusinessLayer
 
             if (matches != null)
             {
-                result = ((from x in matches
+                result = (from x in matches
                            from y in x.EquipeDomicile.Joueurs
-                           where x.EquipeDomicile.CoupeID == coupeID && y.Poste == PosteJoueur.Attrapeur
+                           where x.CoupeId == coupeID && y.Poste == PosteJoueur.Attrapeur
                            orderby y.Nom
-                           select y.ToString() + " => " + x.EquipeDomicile.ToString()).Distinct()).ToList();
+                           select y.ToString() + " => " + x.EquipeDomicile.ToString().Distinct()).ToList();
             }
-
->>>>>>> 286a87a1d4c78e37c923f8272b9163e58c11798e
             return result;
         }
     }
