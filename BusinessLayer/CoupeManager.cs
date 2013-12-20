@@ -8,7 +8,7 @@ using StubDataAccessLayer;
 
 namespace BusinessLayer
 {
-    class CoupeManager
+    public class CoupeManager
     {
         DalManager _manager;
 
@@ -64,6 +64,11 @@ namespace BusinessLayer
             return result;
         }
 
-        /*
+        /*retourne la liste des stades pour lesquels au moins un match est programmé*/
+        public List<string> GetListeStades()
+        {
+            List<string> result = new List<string>();
+            
+        }
     }
 }
