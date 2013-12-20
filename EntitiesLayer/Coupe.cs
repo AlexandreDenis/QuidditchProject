@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Coupe : EntityObject
+    public class Coupe : EntityObject
     {
         private int _year;
         public int Year

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Stade : EntityObject
+    public class Stade : EntityObject
     {
         private string _nom;
         public string Nom

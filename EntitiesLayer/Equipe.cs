@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Equipe : EntityObject
+    public class Equipe : EntityObject
     {
         private string _nom;
         public string Nom

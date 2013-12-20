@@ -15,7 +15,7 @@ namespace EntitiesLayer
         Attrapeur
     }
 
-    class Joueur : Personne
+    public class Joueur : Personne
     {
         private PosteJoueur _poste;
         internal PosteJoueur Poste

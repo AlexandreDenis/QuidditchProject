@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    class Match : EntityObject
+    public class Match : EntityObject
     {
         private int _coupeId;
         public int CoupeId
