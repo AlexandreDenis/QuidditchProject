@@ -8,6 +8,8 @@ namespace EntitiesLayer
 {
     abstract public class EntityObject
     {
+        static public int nextId = 0;
+
         private int _id;
         public int Id
         {
@@ -18,6 +20,7 @@ namespace EntitiesLayer
         public EntityObject (int inId)
 	    {
             this.Id = inId;
+            nextId++;
 	    }
 
         

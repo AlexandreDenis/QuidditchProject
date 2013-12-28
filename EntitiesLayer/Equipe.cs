@@ -37,6 +37,11 @@ namespace EntitiesLayer
             this.Joueurs = new List<Joueur>();
         }
 
+        public void AddJoueur(Joueur joueur)
+        {
+            _joueurs.Add(joueur);
+        }
+
         public override string ToString()
         {
             StringBuilder res = new StringBuilder();
