@@ -22,6 +22,7 @@ namespace StubDataAccessLayer
 
             return joueurs;
         }
+
         public List<Equipe> GetAllEquipes()
         {
             List<Equipe> equipes = new List<Equipe>();
@@ -35,6 +36,7 @@ namespace StubDataAccessLayer
 
             return equipes;
         }
+
         public List<Stade> GetAllStades()
         {
             List<Stade> stades = new List<Stade>();
@@ -48,6 +50,7 @@ namespace StubDataAccessLayer
 
             return stades;
         }
+
         public List<Match> GetAllMatchs()
         {
             List<Equipe> equipes = GetAllEquipes();
@@ -61,6 +64,7 @@ namespace StubDataAccessLayer
 
             return matchs;
         }
+
         public List<Coupe> GetAllCoupes()
         {
             List<Coupe> coupes = new List<Coupe>();

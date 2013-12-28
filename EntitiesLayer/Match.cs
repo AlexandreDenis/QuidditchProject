@@ -79,8 +79,33 @@ namespace EntitiesLayer
 
         public override string ToString()
         {
-            String s = "coupe " + CoupeId + " prix " + Prix;
-            return s;
+            StringBuilder res = new StringBuilder();
+
+            res.Append("Match ");
+            res.Append(Id);
+            res.Append(" -> ");
+            res.Append("Coupe ");
+            res.Append(CoupeId);
+            res.Append(" ( ");
+            res.Append(Date);
+            res.Append(" ) ");
+            res.Append("\n");
+            res.Append(EquipeDomicile.Nom);
+            res.Append("(D) : ");
+            res.Append(ScoreEquipeDomicile);
+            res.Append(" VS ");
+            res.Append(EquipeVisiteur.Nom);
+            res.Append("(V) : ");
+            res.Append(ScoreEquipeVisiteur);
+            res.Append("\n");
+            res.Append("Prix : ");
+            res.Append(Prix);
+            res.Append(" | Stade : ");
+            res.Append(Stade.Id);
+            res.Append("\n");
+            res.Append("\n");
+
+            return res.ToString();
         }
     }
 }

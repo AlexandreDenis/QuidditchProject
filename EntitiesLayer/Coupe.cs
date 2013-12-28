@@ -19,5 +19,18 @@ namespace EntitiesLayer
         {
             this.Year = inYear;
         }
+
+        public override string ToString()
+        {
+            StringBuilder res = new StringBuilder();
+
+            res.Append("Coupe ");
+            res.Append(Id);
+            res.Append(" | annee ");
+            res.Append(Year);
+            res.Append("\n");
+
+            return res.ToString();
+        }
     }
 }

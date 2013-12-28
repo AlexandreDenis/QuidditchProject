@@ -43,5 +43,26 @@ namespace EntitiesLayer
             this.NbPlaces = inNbPlaces;
             this.PourcentageCommission = inPC;
         }
+
+        public override string ToString()
+        {
+            StringBuilder res = new StringBuilder();
+
+            res.Append("Stade ");
+            res.Append(Id);
+            res.Append(" -> ");
+            res.Append(Nom);
+            res.Append(" [ ");
+            res.Append(Adresse);
+            res.Append(" ]");
+            res.Append("\n");
+            res.Append("Nb de places : ");
+            res.Append(NbPlaces);
+            res.Append(" | Commission : ");
+            res.Append(PourcentageCommission);
+            res.Append("\n");
+
+            return res.ToString();
+        }
     }
 }

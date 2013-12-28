@@ -37,5 +37,30 @@ namespace EntitiesLayer
             this.Joueurs = new List<Joueur>();
         }
 
+        public override string ToString()
+        {
+            StringBuilder res = new StringBuilder();
+
+            res.Append("Equipe ");
+            res.Append(Id);
+            res.Append(" | Nom : ");
+            res.Append(Nom);
+            res.Append(" | Pays : ");
+            res.Append(Pays);
+            res.Append("\n");
+
+            foreach (Joueur pl in Joueurs)
+            {
+                res.Append("- ");
+                res.Append(pl.Prenom);
+                res.Append(" ");
+                res.Append(pl.Nom);
+                res.Append("\n");
+            }
+
+            res.Append("\n");
+
+            return res.ToString();
+        }
     }
 }

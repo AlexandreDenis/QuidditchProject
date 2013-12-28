@@ -45,5 +45,31 @@ namespace EntitiesLayer
             this.NbSelection = inSelection;
             this.Score = inScore;
         }
+
+        public override string ToString()
+        {
+            StringBuilder res = new StringBuilder();
+
+            res.Append("Joueur ");
+            res.Append(Id);
+            res.Append(" -> ");
+            res.Append(Nom);
+            res.Append(" ");
+            res.Append(Prenom);
+            res.Append(" ( ");
+            res.Append(DateDeNaissance);
+            res.Append(" ) ");
+            res.Append("\n");
+            res.Append("Poste : ");
+            res.Append(Poste);
+            res.Append(" | Nb selections : ");
+            res.Append(NbSelection);
+            res.Append(" | Score : ");
+            res.Append(Score);
+            res.Append("\n");
+            res.Append("\n");
+
+            return res.ToString();
+        }
     }
 }
