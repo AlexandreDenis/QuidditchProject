@@ -16,6 +16,7 @@ namespace QuidditchConsole
             CoupeManager cp = new CoupeManager();
             int choix = -1;
             bool fin = false;
+            List<string> lstrings;
 
             /*List<String> s = cp.GetListeMatchsCoupe(22);
 
@@ -35,16 +36,19 @@ namespace QuidditchConsole
                     Console.WriteLine("     2 : Afficher la liste des stades");
                     Console.WriteLine("     3 : Afficher la liste des matchs");
                     Console.WriteLine("     4 : Afficher la liste des coupes");
-                    Console.WriteLine("     5 : Quitter");
+                    Console.WriteLine("     5 : Afficher la liste des matchs prévus pour une coupe donnée");
+                    Console.WriteLine("     6 : Afficher la liste des stades pour lesquels au moins un match est programmé pour une coupe donnée");
+                    Console.WriteLine("     7 : Afficher la liste des attrapeurs qui ont joués à domicile pour une coupe donnée");
+                    Console.WriteLine("     8 : Quitter");
                     try
                     {
                         choix = int.Parse(Console.ReadLine());
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         continue;
                     }
-                } while (choix < 0 || choix > 5);
+                } while (choix < 0 || choix > 8);
 
                 switch (choix)
                 {
@@ -94,6 +98,81 @@ namespace QuidditchConsole
                         }
                         break;
                     case 5:
+                        Console.WriteLine("Taper le numero de la coupe :");
+                        try
+                        {
+                            choix = int.Parse(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            continue;
+                        }
+
+                        lstrings = cp.GetListeMatchsCoupe(choix);
+
+                        if (lstrings != null)
+                        {
+                            Console.WriteLine("liste des matchs prévus pour la coupe " + choix + " :");
+                            foreach (string s in lstrings)
+                                Console.WriteLine(s);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Numéro de coupe non valide !\n");
+                        }
+
+                        break;
+                    case 6:
+                        Console.WriteLine("Taper le numero de la coupe :");
+                        try
+                        {
+                            choix = int.Parse(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            continue;
+                        }
+
+                        lstrings = cp.GetListeStades(choix);
+
+                        if (lstrings != null)
+                        {
+                            Console.WriteLine("Liste des stades pour lesquels au moins un match est programmé pour la coupe " + choix + " :");
+                            foreach (string s in lstrings)
+                                Console.WriteLine(s);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Numéro de coupe non valide !\n");
+                        }
+
+                        break;
+                    case 7:
+                        Console.WriteLine("Taper le numero de la coupe :");
+                        try
+                        {
+                            choix = int.Parse(Console.ReadLine());
+                        }
+                        catch (Exception)
+                        {
+                            continue;
+                        }
+
+                        lstrings = cp.GetListeAttrapeursDomicile(choix);
+
+                        if (lstrings != null)
+                        {
+                            Console.WriteLine("Liste des attrapeurs qui ont joués à domicile pour la coupe " + choix + " :");
+                            foreach (string s in lstrings)
+                                Console.WriteLine(s);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Numéro de coupe non valide !\n");
+                        }
+
+                        break;
+                    case 8:
                         fin = true;
                         break;
                 }

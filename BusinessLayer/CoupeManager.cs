@@ -61,6 +61,9 @@ namespace BusinessLayer
                           select x.ToString()).ToList();
             }
 
+            if (result.Count == 0)
+                result = null;
+
             return result;
         }
 
@@ -79,6 +82,9 @@ namespace BusinessLayer
                            select x.Stade.ToString()).Distinct().ToList();
             }
 
+            if (result.Count == 0)
+                result = null;
+
             return result;
         }
 
@@ -94,8 +100,12 @@ namespace BusinessLayer
                            from y in x.EquipeDomicile.Joueurs
                            where x.CoupeId == coupeID && y.Poste == PosteJoueur.Attrapeur
                            orderby y.Nom
-                           select y.ToString() + " => " + x.EquipeDomicile.ToString().Distinct()).ToList();
+                           select y.ToString() + " => " + x.EquipeDomicile.ToString()).Distinct().ToList();
             }
+
+            if (result.Count == 0)
+                result = null;
+
             return result;
         }
     }
