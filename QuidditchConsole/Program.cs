@@ -18,11 +18,6 @@ namespace QuidditchConsole
             bool fin = false;
             List<string> lstrings;
 
-            /*List<String> s = cp.GetListeMatchsCoupe(22);
-
-            foreach (String fs in s)
-                Console.WriteLine(fs);*/
-
             /*Boucles principale*/
             while (true)
             {
@@ -50,6 +45,7 @@ namespace QuidditchConsole
                     }
                 } while (choix < 0 || choix > 8);
 
+                //Gestion du choix
                 switch (choix)
                 {
                     case 0:
@@ -112,7 +108,7 @@ namespace QuidditchConsole
 
                         if (lstrings != null)
                         {
-                            Console.WriteLine("liste des matchs prévus pour la coupe " + choix + " :");
+                            Console.WriteLine("Liste des matchs prévus pour la coupe " + choix + " :");
                             foreach (string s in lstrings)
                                 Console.WriteLine(s);
                         }
@@ -180,32 +176,6 @@ namespace QuidditchConsole
                 if (fin)
                     break;
             }
-
-
-            
-            /*
-            int choix = -1;
-            while (choix != 3)
-            {
-                Console.WriteLine("Que voulez-vous faire?");
-                Console.WriteLine("   0 -> afficher la liste des matchs");
-                Console.WriteLine("   1 -> afficher la liste des stades");
-                Console.WriteLine("   2 -> afficher la liste des attrapeurs");
-                Console.WriteLine("   3 -> quitter");
-
-                try
-                {
-                    choix = int.Parse(Console.ReadLine());
-                }
-                catch (Exception)
-                {
-                    continue;
-                }
-                switch (choix)
-                {
-
-                }
-            }*/
         }
     }
 }
