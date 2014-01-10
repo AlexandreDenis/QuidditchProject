@@ -111,5 +111,28 @@ namespace StubDataAccessLayer
 
             return coupes;
         }
+
+        public List<Utilisateur> GetAllUtilisateurs()
+        {
+            List<Utilisateur> utilisateurs = new List<Utilisateur>();
+
+            utilisateurs.Add(new Utilisateur("Toto","Toto","Toto","Toto"));
+            utilisateurs.Add(new Utilisateur("Toto2","Toto2","Toto2","Toto2"));
+            utilisateurs.Add(new Utilisateur("Toto3","Toto3","Toto3","Toto3"));
+
+            return utilisateurs;
+        }
+
+        public Utilisateur GetUtilsateurByLogin(string inLogin)
+        {
+            Utilisateur utilReturn = null;
+            foreach (Utilisateur utilisateur in GetAllUtilisateurs())
+            {
+                    if (utilisateur.Login.Equals(inLogin))
+                        utilReturn = utilisateur;
+            }
+
+            return utilReturn;
+        }
     }
 }

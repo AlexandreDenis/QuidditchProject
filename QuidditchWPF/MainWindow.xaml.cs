@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,27 +28,32 @@ namespace QuidditchWPF
             InitializeComponent();
 
             _preferenceUtilisateur = new PreferenceUtilisateur();
-
-            _preferenceUtilisateur.Login = "Toto";
-            _preferenceUtilisateur.Load();
-            this.Height = _preferenceUtilisateur.HeightWindow;
-            this.Width = _preferenceUtilisateur.WidthWindow;
-            this.Top = _preferenceUtilisateur.TopWindow;
-            this.Left = _preferenceUtilisateur.LeftWindow;
         }
+
+         protected override void OnActivated(EventArgs e)
+         {
+             if (File.Exists("Toto.xml"))
+             {
+                 _preferenceUtilisateur.Login = "Toto";
+                 _preferenceUtilisateur.Load();
+                 this.Height = _preferenceUtilisateur.HeightWindow;
+                 this.Width = _preferenceUtilisateur.WidthWindow;
+                 this.Top = _preferenceUtilisateur.TopWindow;
+                 this.Left = _preferenceUtilisateur.LeftWindow;
+             }
+
+             base.OnActivated(e);
+         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
-            if (_preferenceUtilisateur != null)
-            {
-                _preferenceUtilisateur.Login = "Toto";
-                _preferenceUtilisateur.WidthWindow = this.ActualWidth;
-                _preferenceUtilisateur.HeightWindow = this.ActualHeight;
-                _preferenceUtilisateur.TopWindow = this.Top;
-                _preferenceUtilisateur.LeftWindow = this.Left;
-                _preferenceUtilisateur.Save();
-            }
-
+            _preferenceUtilisateur.Login = "Toto";
+            _preferenceUtilisateur.WidthWindow = this.ActualWidth;
+            _preferenceUtilisateur.HeightWindow = this.ActualHeight;
+            _preferenceUtilisateur.TopWindow = this.Top;
+            _preferenceUtilisateur.LeftWindow = this.Left;
+            _preferenceUtilisateur.Save();
+            
             base.OnClosing(e);
         }
     }

@@ -83,7 +83,8 @@ namespace QuidditchWPF
             }
             catch (Exception)
             {
-                throw;
+                this.TopWindow = 0;
+                this.LeftWindow = 0;
             }
             finally
             {
