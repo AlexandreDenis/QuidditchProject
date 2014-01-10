@@ -1,27 +1,12 @@
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.exe.config
-<<<<<<< HEAD
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.exe
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\BusinessLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\EntitiesLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\BusinessLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\EntitiesLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.csprojResolveAssemblyReference.cache
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.exe
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.pdb
-=======
-H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.exe.config
->>>>>>> abf1cdc6ee31c04833015a10aa655e218bb753ac
-H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.exe
-H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.pdb
-H:\c#\quidditch\QuidditchConsole\obj\Debug\QuidditchConsole.csprojResolveAssemblyReference.cache
-H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.exe
-H:\c#\quidditch\QuidditchConsole\bin\Debug\QuidditchConsole.pdb
-H:\c#\quidditch\QuidditchConsole\bin\Debug\BusinessLayer.dll
-H:\c#\quidditch\QuidditchConsole\bin\Debug\EntitiesLayer.dll
-H:\c#\quidditch\QuidditchConsole\bin\Debug\StubDataAccessLayer.dll
-H:\c#\quidditch\QuidditchConsole\bin\Debug\BusinessLayer.pdb
-H:\c#\quidditch\QuidditchConsole\bin\Debug\EntitiesLayer.pdb
-H:\c#\quidditch\QuidditchConsole\bin\Debug\StubDataAccessLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\StubDataAccessLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.exe.config
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.exe
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\QuidditchConsole.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\BusinessLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\EntitiesLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\BusinessLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\EntitiesLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.exe
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchConsole\obj\Debug\QuidditchConsole.pdb

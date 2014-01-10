@@ -1,14 +1,7 @@
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
-H:\c#\quidditch\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
-H:\c#\quidditch\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
-H:\c#\quidditch\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
-H:\c#\quidditch\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
-H:\c#\quidditch\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
-H:\c#\quidditch\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
-H:\c#\quidditch\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb

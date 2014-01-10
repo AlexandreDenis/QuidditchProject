@@ -18,7 +18,7 @@ namespace QuidditchConsole
             bool fin = false;
             List<string> lstrings;
 
-            /*Boucles principale*/
+            /*Boucle principale*/
             while (true)
             {
                 /*Saisie du choix par l'utilisateur*/

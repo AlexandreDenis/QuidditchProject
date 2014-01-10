@@ -1,8 +1,5 @@
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-c:\users\alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-H:\c#\quidditch\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-H:\c#\quidditch\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-H:\c#\quidditch\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-H:\c#\quidditch\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
