@@ -32,6 +32,20 @@ namespace QuidditchWPF
             set { _heightWindow = value; }
         }
 
+        private double _topWindow;
+        public double TopWindow
+        {
+            get { return _topWindow; }
+            set { _topWindow = value; }
+        }
+
+        private double _leftWindow;
+        public double LeftWindow
+        {
+            get { return _leftWindow; }
+            set { _leftWindow = value; }
+        }
+
         public void Save()
         {
             StreamWriter sw = null;
@@ -64,6 +78,8 @@ namespace QuidditchWPF
                 PreferenceUtilisateur pref = (PreferenceUtilisateur)serializer.Deserialize(sr);
                 this.HeightWindow = pref.HeightWindow;
                 this.WidthWindow = pref.WidthWindow;
+                this.TopWindow = pref.TopWindow;
+                this.LeftWindow = pref.LeftWindow;
             }
             catch (Exception)
             {

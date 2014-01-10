@@ -32,6 +32,8 @@ namespace QuidditchWPF
             _preferenceUtilisateur.Load();
             this.Height = _preferenceUtilisateur.HeightWindow;
             this.Width = _preferenceUtilisateur.WidthWindow;
+            this.Top = _preferenceUtilisateur.TopWindow;
+            this.Left = _preferenceUtilisateur.LeftWindow;
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -41,6 +43,8 @@ namespace QuidditchWPF
                 _preferenceUtilisateur.Login = "Toto";
                 _preferenceUtilisateur.WidthWindow = this.ActualWidth;
                 _preferenceUtilisateur.HeightWindow = this.ActualHeight;
+                _preferenceUtilisateur.TopWindow = this.Top;
+                _preferenceUtilisateur.LeftWindow = this.Left;
                 _preferenceUtilisateur.Save();
             }
 

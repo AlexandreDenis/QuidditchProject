@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceUtilisateur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Login>Toto</Login>
-  <WidthWindow>341</WidthWindow>
-  <HeightWindow>253</HeightWindow>
+  <WidthWindow>486</WidthWindow>
+  <HeightWindow>228</HeightWindow>
+  <TopWindow>44</TopWindow>
+  <LeftWindow>851</LeftWindow>
 </PreferenceUtilisateur>
