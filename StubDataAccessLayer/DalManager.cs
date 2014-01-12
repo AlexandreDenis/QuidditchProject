@@ -128,8 +128,8 @@ namespace StubDataAccessLayer
             Utilisateur utilReturn = null;
             foreach (Utilisateur utilisateur in GetAllUtilisateurs())
             {
-                    if (utilisateur.Login.Equals(inLogin))
-                        utilReturn = utilisateur;
+                if (utilisateur.Login.Equals(inLogin))
+                    utilReturn = utilisateur;
             }
 
             return utilReturn;
