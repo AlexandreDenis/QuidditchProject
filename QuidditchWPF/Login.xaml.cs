@@ -40,7 +40,8 @@ namespace QuidditchWPF
             else
             {
                 MessageBox.Show("Login/Mot de passe incorrect !");
-                this.Close();
+                loginWPF.Clear();
+                mdpWPF.Clear();
             }
         }
     }
