@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using BusinessLayer;
+
 namespace QuidditchWPF
 {
     /// <summary>
@@ -22,6 +24,24 @@ namespace QuidditchWPF
         public Login()
         {
             InitializeComponent();
+        }
+        
+        protected void onClickConnexionButton(object sender, RoutedEventArgs e)
+        {
+            CoupeManager cp = new CoupeManager();
+
+            if (cp.checkConnexionUser(loginWPF.Text.ToLower(), mdpWPF.Password))
+            {
+                MainWindow win = new MainWindow(loginWPF.Text.ToLower());
+                win.Show();
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Login/Mot de passe incorrect !");
+                this.Close();
+            }
         }
     }
 }

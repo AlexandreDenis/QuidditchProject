@@ -18,7 +18,7 @@
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">Connexion</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Login :</TextBlock>
         <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Password :</TextBlock>
-        <Button    Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Name="connexionWPF">Se connecter</Button>
+        <Button    Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Name="connexionWPF" Click="onClickConnexionButton">Se connecter</Button>
         <TextBox   Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="loginWPF"></TextBox>
         <PasswordBox   Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Name="mdpWPF"></PasswordBox>
     </Grid>

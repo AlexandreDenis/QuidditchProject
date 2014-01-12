@@ -21,32 +21,36 @@ namespace QuidditchWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-         private PreferenceUtilisateur _preferenceUtilisateur;
+        private PreferenceUtilisateur _preferenceUtilisateur;
 
-         public MainWindow()
+        private string currentUser;
+
+        public MainWindow(string inLogin)
         {
             InitializeComponent();
 
+            currentUser = inLogin;
             _preferenceUtilisateur = new PreferenceUtilisateur();
         }
-         protected override void OnSourceInitialized(EventArgs e)
-         {
-             if (File.Exists("Toto.xml"))
-             {
-                 _preferenceUtilisateur.Login = "Toto";
-                 _preferenceUtilisateur.Load();
-                 this.Height = _preferenceUtilisateur.HeightWindow;
-                 this.Width = _preferenceUtilisateur.WidthWindow;
-                 this.Top = _preferenceUtilisateur.TopWindow;
-                 this.Left = _preferenceUtilisateur.LeftWindow;
-             }
 
-             base.OnSourceInitialized(e);
-         }
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            if (File.Exists(currentUser + ".xml"))
+            {
+                _preferenceUtilisateur.Login = currentUser;
+                _preferenceUtilisateur.Load();
+                this.Height = _preferenceUtilisateur.HeightWindow;
+                this.Width = _preferenceUtilisateur.WidthWindow;
+                this.Top = _preferenceUtilisateur.TopWindow;
+                this.Left = _preferenceUtilisateur.LeftWindow;
+            }
+
+            base.OnSourceInitialized(e);
+        }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
-            _preferenceUtilisateur.Login = "Toto";
+            _preferenceUtilisateur.Login = currentUser;
             _preferenceUtilisateur.WidthWindow = this.ActualWidth;
             _preferenceUtilisateur.HeightWindow = this.ActualHeight;
             _preferenceUtilisateur.TopWindow = this.Top;

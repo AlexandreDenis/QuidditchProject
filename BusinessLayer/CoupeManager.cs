@@ -47,6 +47,11 @@ namespace BusinessLayer
             return _manager.GetAllMatchs();
         }
 
+        public Utilisateur GetUser(string inLogin)
+        {
+            return _manager.GetUtilsateurByLogin(inLogin);
+        }
+
         /*retourne la liste des matchs prévus classés par date*/
         public List<string> GetListeMatchsCoupe(int inCoupeID)
         {
@@ -107,6 +112,21 @@ namespace BusinessLayer
                 result = null;
 
             return result;
+        }
+
+        /*verification du login et du mot de passe*/
+        public bool checkConnexionUser(string inLogin, string inPassword)
+        {
+            bool res = false;
+            Utilisateur user = GetUser(inLogin);
+
+            if (user != null)
+            {
+                if (user.Password == inPassword)
+                    res = true;
+            }
+
+            return res;
         }
     }
 }
