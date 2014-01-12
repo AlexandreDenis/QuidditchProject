@@ -1,0 +1,5 @@
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Release\EntitiesLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Release\EntitiesLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Release\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Release\EntitiesLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Release\EntitiesLayer.pdb

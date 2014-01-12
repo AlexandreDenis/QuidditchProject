@@ -39,7 +39,7 @@ namespace QuidditchWPF
             logFile.Close();
 
             //affichage d'un message pour l'utilisateur
-            MessageBox.Show("Une erreur inattendue s'est produite.");
+            MessageBox.Show("Une erreur inattendue s'est produite (cf. app.log).");
 
             //on prévient que l'exception a bien été gérée par l'application
             e.Handled = true;

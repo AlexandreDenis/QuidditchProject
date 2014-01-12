@@ -1,0 +1,7 @@
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Release\StubDataAccessLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Release\StubDataAccessLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Release\EntitiesLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\bin\Release\EntitiesLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Release\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Release\StubDataAccessLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\StubDataAccessLayer\obj\Release\StubDataAccessLayer.pdb

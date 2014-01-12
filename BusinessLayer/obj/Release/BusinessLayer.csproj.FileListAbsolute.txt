@@ -1,0 +1,9 @@
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\EntitiesLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\StubDataAccessLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\EntitiesLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\bin\Release\StubDataAccessLayer.pdb
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\BusinessLayer\obj\Release\BusinessLayer.pdb
