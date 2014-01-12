@@ -29,8 +29,7 @@ namespace QuidditchWPF
 
             _preferenceUtilisateur = new PreferenceUtilisateur();
         }
-
-         protected override void OnActivated(EventArgs e)
+         protected override void OnSourceInitialized(EventArgs e)
          {
              if (File.Exists("Toto.xml"))
              {
@@ -42,7 +41,7 @@ namespace QuidditchWPF
                  this.Left = _preferenceUtilisateur.LeftWindow;
              }
 
-             base.OnActivated(e);
+             base.OnSourceInitialized(e);
          }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
