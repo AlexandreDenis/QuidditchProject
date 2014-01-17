@@ -59,5 +59,11 @@ namespace QuidditchWPF
             
             base.OnClosing(e);
         }
+
+        protected void onClickCoupesButton(object sender, RoutedEventArgs e)
+        {
+            ListeDesCoupes ldc = new ListeDesCoupes();
+            ldc.Show();
+        }
     }
 }

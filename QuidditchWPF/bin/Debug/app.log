@@ -1,0 +1,25 @@
+17/01/14 - 13:50 : System.Windows.Threading.Dispatcher
+17/01/14 - 13:51 : System.Windows.Markup.XamlParseException: 'L'invocation du constructeur sur le type 'QuidditchWPF.Login' qui correspond aux contraintes de liaison spécifiées a levé une exception.' numéro de ligne '3' et position de ligne '9'. ---> System.DivideByZeroException: Tentative de division par zéro.
+   à QuidditchWPF.Login..ctor() dans c:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchWPF\Login.xaml.cs:ligne 28
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   à System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   à System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   à System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   à System.Windows.Application.LoadComponent(Uri resourceLocator, Boolean bSkipJournaledProperties)
+   à System.Windows.Application.DoStartup()
+   à System.Windows.Application.<.ctor>b__1(Object unused)
+   à System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   à MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+17/01/14 - 13:51 : System.Windows.Markup.XamlParseException: 'L'invocation du constructeur sur le type 'QuidditchWPF.Login' qui correspond aux contraintes de liaison spécifiées a levé une exception.' numéro de ligne '3' et position de ligne '9'. ---> System.DivideByZeroException: Tentative de division par zéro.
+   à QuidditchWPF.Login..ctor() dans c:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchWPF\Login.xaml.cs:ligne 28
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   à System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   à System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   à System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   à System.Windows.Application.LoadComponent(Uri resourceLocator, Boolean bSkipJournaledProperties)
+   à System.Windows.Application.DoStartup()
+   à System.Windows.Application.<.ctor>b__1(Object unused)
+   à System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   à MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)

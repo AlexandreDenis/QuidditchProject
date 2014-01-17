@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceUtilisateur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Login>adrien</Login>
-  <WidthWindow>525</WidthWindow>
-  <HeightWindow>441</HeightWindow>
-  <TopWindow>120</TopWindow>
-  <LeftWindow>-35</LeftWindow>
+  <WidthWindow>925</WidthWindow>
+  <HeightWindow>488</HeightWindow>
+  <TopWindow>240</TopWindow>
+  <LeftWindow>1</LeftWindow>
 </PreferenceUtilisateur>

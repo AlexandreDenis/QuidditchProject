@@ -24,15 +24,21 @@ namespace QuidditchWPF
         public Login()
         {
             InitializeComponent();
-            int j = 4 - 4;
-            int i = 5 / j;
         }
         
         protected void onClickConnexionButton(object sender, RoutedEventArgs e)
         {
             CoupeManager cp = new CoupeManager();
 
+#if DEBUG
+            MainWindow win = new MainWindow("alec");
+            win.Show();
+
+            this.Close();
+
+#else
             if (cp.checkConnexionUser(loginWPF.Text.ToLower(), mdpWPF.Password))
+
             {
                 MainWindow win = new MainWindow(loginWPF.Text.ToLower());
                 win.Show();
@@ -45,6 +51,7 @@ namespace QuidditchWPF
                 loginWPF.Clear();
                 mdpWPF.Clear();
             }
+#endif
         }
 
         
