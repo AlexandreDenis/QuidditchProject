@@ -15,9 +15,17 @@ namespace EntitiesLayer
             set { _year = value; }
         }
 
-        public Coupe(int inId, int inYear) : base(inId)
+        private string _libelle;
+        public string Libelle
+        {
+            get { return _libelle; }
+            set { _libelle = value; }
+        }
+
+        public Coupe(int inId, int inYear, string inLibelle) : base(inId)
         {
             this.Year = inYear;
+            this.Libelle = inLibelle;
         }
 
         public override string ToString()
@@ -25,8 +33,8 @@ namespace EntitiesLayer
             StringBuilder res = new StringBuilder();
 
             res.Append(Year);
-            res.Append(" - Coupe ");
-            res.Append(Id);
+            res.Append(" - ");
+            res.Append(Libelle);
             
             res.Append("\n");
 

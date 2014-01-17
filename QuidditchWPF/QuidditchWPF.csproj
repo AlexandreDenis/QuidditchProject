@@ -57,6 +57,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ListeDesJoueurs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -71,6 +75,9 @@
     </Compile>
     <Compile Include="ListeDesCoupes.xaml.cs">
       <DependentUpon>ListeDesCoupes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListeDesJoueurs.xaml.cs">
+      <DependentUpon>ListeDesJoueurs.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>

@@ -10,7 +10,7 @@
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
                 <Label Name="Annee" Content="Année :"/>
-                <TextBox Name="inputAnnee" Width="410" Text="{Binding Year}"/>
+                <TextBox Name="inputAnnee" Width="410" Text="{Binding Libelle}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label Name="Libelle" Content="Libellé :"/>

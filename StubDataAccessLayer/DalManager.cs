@@ -106,8 +106,8 @@ namespace StubDataAccessLayer
         {
             List<Coupe> coupes = new List<Coupe>();
 
-            coupes.Add(new Coupe(33, 2013));
-            coupes.Add(new Coupe(34, 2014));
+            coupes.Add(new Coupe(33, 2013, "Coupe des nations"));
+            coupes.Add(new Coupe(34, 2014, "Coupe des régions"));
 
             return coupes;
         }

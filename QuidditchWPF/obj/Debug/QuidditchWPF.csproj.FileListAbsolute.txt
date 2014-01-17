@@ -21,3 +21,5 @@ C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\Quiddi
 C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\Login.g.cs
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesCoupes.baml
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesCoupes.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesJoueurs.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesJoueurs.g.cs

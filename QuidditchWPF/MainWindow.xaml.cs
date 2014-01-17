@@ -65,5 +65,11 @@ namespace QuidditchWPF
             ListeDesCoupes ldc = new ListeDesCoupes();
             ldc.Show();
         }
+
+        protected void onClickJoueursButton(object sender, RoutedEventArgs e)
+        {
+            ListeDesJoueurs ldj = new ListeDesJoueurs();
+            ldj.Show();
+        }
     }
 }

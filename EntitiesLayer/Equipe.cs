@@ -46,7 +46,7 @@ namespace EntitiesLayer
         {
             StringBuilder res = new StringBuilder();
 
-            res.Append("Equipe ");
+            /*res.Append("Equipe ");
             res.Append(Id);
             res.Append(" | Nom : ");
             res.Append(Nom);
@@ -61,7 +61,12 @@ namespace EntitiesLayer
                 res.Append(" ");
                 res.Append(pl.Nom);
                 res.Append("\n");
-            }
+            }*/
+
+            res.Append(Nom);
+            res.Append(" (");
+            res.Append(Pays);
+            res.Append(")");
 
             res.Append("\n");
 
