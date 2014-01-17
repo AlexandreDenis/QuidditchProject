@@ -23,19 +23,21 @@ namespace QuidditchWPF
         void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
             string path = "app.log";
-            FileStream logFile = File.OpenWrite(path);
+            FileStream logFile = File.Open(path, FileMode.Append, FileAccess.Write);
             StreamWriter sw = new StreamWriter(logFile);
 
-            //on reporte l'erreur dans un fichier de log
-            string currentDate = String.Format("[dd/MM/yy - HH : mm] : ",
-                System.DateTime.Now.Day,
+            DateTime dt = new DateTime(System.DateTime.Now.Year,
                 System.DateTime.Now.Month,
-                System.DateTime.Now.Year,
+                System.DateTime.Now.Day,                
                 System.DateTime.Now.Hour,
-                System.DateTime.Now.Minute
-                );
-            sw.WriteLine(currentDate + e.ToString());
+                System.DateTime.Now.Minute,
+                0,
+                0);
+            //on reporte l'erreur dans un fichier de log
+            string currentDate = String.Format("{0:dd/MM/yy - HH:mm} : ",dt);
+            sw.WriteLine(currentDate + e.Exception.ToString());
 
+            sw.Close();
             logFile.Close();
 
             //affichage d'un message pour l'utilisateur
