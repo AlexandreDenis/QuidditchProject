@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 using BusinessLayer;
 using EntitiesLayer;
@@ -23,10 +24,13 @@ namespace QuidditchWPF
     public partial class ListeDesJoueurs : Window
     {
         protected List<Equipe> _listEquipes;
+        protected PreferenceUtilisateur _preferenceUtilisateur;
 
-        public ListeDesJoueurs()
+        public ListeDesJoueurs(PreferenceUtilisateur prefUser)
         {
             InitializeComponent();
+
+            _preferenceUtilisateur = prefUser;
 
             CoupeManager cp = new CoupeManager();
             _listEquipes = cp.GetEquipes();
@@ -53,6 +57,39 @@ namespace QuidditchWPF
         protected void onListViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Grid.DataContext = listviewEquipe.SelectedItem;
+        }
+
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            if (File.Exists(_preferenceUtilisateur.Login + ".xml"))
+            {
+                _preferenceUtilisateur.Load();
+
+                if (_preferenceUtilisateur.HeightWindowJoueurs != 0 && _preferenceUtilisateur.WidthWindowJoueurs != 0)
+                {
+                    this.Height = _preferenceUtilisateur.HeightWindowJoueurs;
+                    this.Width = _preferenceUtilisateur.WidthWindowJoueurs;
+                    this.Top = _preferenceUtilisateur.TopWindowJoueurs;
+                    this.Left = _preferenceUtilisateur.LeftWindowJoueurs;
+                }
+                else
+                {
+                    this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                }
+            }
+
+            base.OnSourceInitialized(e);
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            _preferenceUtilisateur.WidthWindowJoueurs = this.ActualWidth;
+            _preferenceUtilisateur.HeightWindowJoueurs = this.ActualHeight;
+            _preferenceUtilisateur.TopWindowJoueurs = this.Top;
+            _preferenceUtilisateur.LeftWindowJoueurs = this.Left;
+            _preferenceUtilisateur.Save();
+
+            base.OnClosing(e);
         }
     }
 }

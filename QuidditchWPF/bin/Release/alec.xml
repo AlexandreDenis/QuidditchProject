@@ -3,6 +3,26 @@
   <Login>alec</Login>
   <WidthWindow>525</WidthWindow>
   <HeightWindow>350</HeightWindow>
-  <TopWindow>187</TopWindow>
-  <LeftWindow>689</LeftWindow>
+  <TopWindow>258</TopWindow>
+  <LeftWindow>197</LeftWindow>
+  <WidthWindowCoupes>800</WidthWindowCoupes>
+  <HeightWindowCoupes>200</HeightWindowCoupes>
+  <TopWindowCoupes>11</TopWindowCoupes>
+  <LeftWindowCoupes>54</LeftWindowCoupes>
+  <WidthWindowEquipes>400</WidthWindowEquipes>
+  <HeightWindowEquipes>200</HeightWindowEquipes>
+  <TopWindowEquipes>44</TopWindowEquipes>
+  <LeftWindowEquipes>923</LeftWindowEquipes>
+  <WidthWindowJoueurs>850</WidthWindowJoueurs>
+  <HeightWindowJoueurs>250</HeightWindowJoueurs>
+  <TopWindowJoueurs>295</TopWindowJoueurs>
+  <LeftWindowJoueurs>34</LeftWindowJoueurs>
+  <WidthWindowMatchs>850</WidthWindowMatchs>
+  <HeightWindowMatchs>300</HeightWindowMatchs>
+  <TopWindowMatchs>408</TopWindowMatchs>
+  <LeftWindowMatchs>14</LeftWindowMatchs>
+  <WidthWindowStades>800</WidthWindowStades>
+  <HeightWindowStades>200</HeightWindowStades>
+  <TopWindowStades>293</TopWindowStades>
+  <LeftWindowStades>559</LeftWindowStades>
 </PreferenceUtilisateur>

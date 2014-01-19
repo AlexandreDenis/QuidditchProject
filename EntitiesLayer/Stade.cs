@@ -48,7 +48,7 @@ namespace EntitiesLayer
         {
             StringBuilder res = new StringBuilder();
 
-            res.Append("Stade ");
+            /*res.Append("Stade ");
             res.Append(Id);
             res.Append(" -> ");
             res.Append(Nom);
@@ -59,8 +59,11 @@ namespace EntitiesLayer
             res.Append("Nb de places : ");
             res.Append(NbPlaces);
             res.Append(" | Commission : ");
-            res.Append(PourcentageCommission);
-            res.Append("\n");
+            res.Append(PourcentageCommission);*/
+
+            res.Append(Nom);
+
+            //res.Append("\n");
 
             return res.ToString();
         }

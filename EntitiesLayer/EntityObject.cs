@@ -22,7 +22,5 @@ namespace EntitiesLayer
             this.Id = inId;
             nextId++;
 	    }
-
-        
     }
 }

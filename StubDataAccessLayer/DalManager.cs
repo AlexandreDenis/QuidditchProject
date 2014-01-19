@@ -61,7 +61,7 @@ namespace StubDataAccessLayer
                 e2.AddJoueur(joueurs[i]);
             }
 
-            Equipe e3 = new Equipe(23, "Serpentard", "Bulgarie");
+            Equipe e3 = new Equipe(23, "Poussoufle", "Bulgarie");
             for (i = 14; i < 21; i++)
             {
                 e3.AddJoueur(joueurs[i]);
@@ -78,12 +78,8 @@ namespace StubDataAccessLayer
         {
             List<Stade> stades = new List<Stade>();
 
-            stades.Add(new Stade(24, "stade1", "adresse1", 500, 20.20));
-            stades.Add(new Stade(25, "stade2", "adresse2", 500, 20.20));
-            stades.Add(new Stade(26, "stade3", "adresse3", 500, 20.20));
-            stades.Add(new Stade(27, "stade4", "adresse4", 500, 20.20));
-            stades.Add(new Stade(28, "stade5", "adresse5", 500, 20.20));
-            stades.Add(new Stade(29, "stade6", "adresse6", 500, 20.20));
+            stades.Add(new Stade(24, "Poudlard", "5 rue du hibou", 500, 15.3));
+            stades.Add(new Stade(25, "World Cup Stadium", "47 impasse du balai", 2000, 20.20));
 
             return stades;
         }
@@ -95,9 +91,9 @@ namespace StubDataAccessLayer
 
             List<Match> matchs = new List<Match>();
 
-            matchs.Add(new Match(30, 33, DateTime.Now, equipes[0], equipes[1], 50.5, 0, 0, stades[0]));
-            matchs.Add(new Match(31, 33, DateTime.Now, equipes[1], equipes[2], 50.5, 0, 0, stades[1]));
-            matchs.Add(new Match(32, 34, DateTime.Now, equipes[2], equipes[0], 50.5, 0, 0, stades[2]));
+            matchs.Add(new Match(30, 33, new DateTime(2014, 2, 18), equipes[0], equipes[1], 25.2, 0, 0, stades[0]));
+            matchs.Add(new Match(31, 33, new DateTime(2014, 6, 25), equipes[1], equipes[2], 100.25, 0, 0, stades[1]));
+            matchs.Add(new Match(32, 34, new DateTime(2015, 7, 21), equipes[2], equipes[0], 102, 0, 0, stades[1]));
 
             return matchs;
         }

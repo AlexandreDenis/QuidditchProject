@@ -53,9 +53,9 @@ namespace BusinessLayer
         }
 
         /*retourne la liste des matchs prévus classés par date*/
-        public List<string> GetListeMatchsCoupe(int inCoupeID)
+        public List<Match> GetListeMatchsCoupe(int inCoupeID)
         {
-            List<string> result = new List<string>();
+            List<Match> result = new List<Match>();
             List<Match> matchs = this.GetMatchs();
 
             if (matchs != null)
@@ -63,7 +63,7 @@ namespace BusinessLayer
                 result = (from x in matchs
                           where x.CoupeId == inCoupeID
                           orderby x.Date
-                          select x.ToString()).ToList();
+                          select x).ToList();
             }
 
             if (result.Count == 0)

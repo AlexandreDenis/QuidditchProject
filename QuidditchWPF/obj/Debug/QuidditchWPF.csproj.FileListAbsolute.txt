@@ -23,3 +23,9 @@ C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\Quiddi
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesCoupes.g.cs
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesJoueurs.baml
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesJoueurs.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesEquipes.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesEquipes.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListedesStades.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListedesStades.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesMatchs.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesMatchs.g.cs

@@ -57,9 +57,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ListeDesEquipes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ListeDesJoueurs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListeDesMatchs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListedesStades.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
@@ -76,8 +88,17 @@
     <Compile Include="ListeDesCoupes.xaml.cs">
       <DependentUpon>ListeDesCoupes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListeDesEquipes.xaml.cs">
+      <DependentUpon>ListeDesEquipes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListeDesJoueurs.xaml.cs">
       <DependentUpon>ListeDesJoueurs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListeDesMatchs.xaml.cs">
+      <DependentUpon>ListeDesMatchs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListedesStades.xaml.cs">
+      <DependentUpon>ListedesStades.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>

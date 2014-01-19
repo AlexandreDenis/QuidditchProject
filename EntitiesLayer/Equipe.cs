@@ -68,7 +68,7 @@ namespace EntitiesLayer
             res.Append(Pays);
             res.Append(")");
 
-            res.Append("\n");
+            //res.Append("\n");
 
             return res.ToString();
         }

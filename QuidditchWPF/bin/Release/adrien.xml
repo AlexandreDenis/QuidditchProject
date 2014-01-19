@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceUtilisateur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Login>adrien</Login>
+  <WidthWindow>525</WidthWindow>
+  <HeightWindow>350</HeightWindow>
+  <TopWindow>189</TopWindow>
+  <LeftWindow>421</LeftWindow>
+  <WidthWindowCoupes>800</WidthWindowCoupes>
+  <HeightWindowCoupes>500</HeightWindowCoupes>
+  <TopWindowCoupes>114</TopWindowCoupes>
+  <LeftWindowCoupes>283</LeftWindowCoupes>
+  <WidthWindowEquipes>400</WidthWindowEquipes>
+  <HeightWindowEquipes>400</HeightWindowEquipes>
+  <TopWindowEquipes>340</TopWindowEquipes>
+  <LeftWindowEquipes>948</LeftWindowEquipes>
+  <WidthWindowJoueurs>850</WidthWindowJoueurs>
+  <HeightWindowJoueurs>500</HeightWindowJoueurs>
+  <TopWindowJoueurs>114</TopWindowJoueurs>
+  <LeftWindowJoueurs>258</LeftWindowJoueurs>
+  <WidthWindowMatchs>850</WidthWindowMatchs>
+  <HeightWindowMatchs>500</HeightWindowMatchs>
+  <TopWindowMatchs>114</TopWindowMatchs>
+  <LeftWindowMatchs>258</LeftWindowMatchs>
+  <WidthWindowStades>800</WidthWindowStades>
+  <HeightWindowStades>500</HeightWindowStades>
+  <TopWindowStades>114</TopWindowStades>
+  <LeftWindowStades>283</LeftWindowStades>
+</PreferenceUtilisateur>

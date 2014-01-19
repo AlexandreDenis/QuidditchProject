@@ -28,16 +28,17 @@ namespace QuidditchWPF
         public MainWindow(string inLogin)
         {
             InitializeComponent();
-
+            
             currentUser = inLogin;
             _preferenceUtilisateur = new PreferenceUtilisateur();
         }
 
         protected override void OnSourceInitialized(EventArgs e)
         {
+            _preferenceUtilisateur.Login = currentUser;
+
             if (File.Exists(currentUser + ".xml"))
             {
-                _preferenceUtilisateur.Login = currentUser;
                 _preferenceUtilisateur.Load();
                 this.Height = _preferenceUtilisateur.HeightWindow;
                 this.Width = _preferenceUtilisateur.WidthWindow;
@@ -62,14 +63,32 @@ namespace QuidditchWPF
 
         protected void onClickCoupesButton(object sender, RoutedEventArgs e)
         {
-            ListeDesCoupes ldc = new ListeDesCoupes();
+            ListeDesCoupes ldc = new ListeDesCoupes(_preferenceUtilisateur);
             ldc.Show();
         }
 
         protected void onClickJoueursButton(object sender, RoutedEventArgs e)
         {
-            ListeDesJoueurs ldj = new ListeDesJoueurs();
+            ListeDesJoueurs ldj = new ListeDesJoueurs(_preferenceUtilisateur);
             ldj.Show();
+        }
+
+        private void onClickEquipesButton(object sender, RoutedEventArgs e)
+        {
+            ListeDesEquipes lde = new ListeDesEquipes(_preferenceUtilisateur);
+            lde.Show();
+        }
+
+        private void onClickStadesButton(object sender, RoutedEventArgs e)
+        {
+            ListedesStades lds = new ListedesStades(_preferenceUtilisateur);
+            lds.Show();
+        }
+
+        private void onClickMatchsButton(object sender, RoutedEventArgs e)
+        {
+            ListeDesMatchs ldm = new ListeDesMatchs(_preferenceUtilisateur);
+            ldm.Show();
         }
     }
 }
