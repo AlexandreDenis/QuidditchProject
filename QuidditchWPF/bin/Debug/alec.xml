@@ -3,8 +3,8 @@
   <Login>alec</Login>
   <WidthWindow>574</WidthWindow>
   <HeightWindow>411</HeightWindow>
-  <TopWindow>325</TopWindow>
-  <LeftWindow>384</LeftWindow>
+  <TopWindow>174</TopWindow>
+  <LeftWindow>443</LeftWindow>
   <WidthWindowCoupes>800</WidthWindowCoupes>
   <HeightWindowCoupes>200</HeightWindowCoupes>
   <TopWindowCoupes>23</TopWindowCoupes>
@@ -19,8 +19,8 @@
   <LeftWindowJoueurs>17</LeftWindowJoueurs>
   <WidthWindowMatchs>850</WidthWindowMatchs>
   <HeightWindowMatchs>300</HeightWindowMatchs>
-  <TopWindowMatchs>404</TopWindowMatchs>
-  <LeftWindowMatchs>11</LeftWindowMatchs>
+  <TopWindowMatchs>386</TopWindowMatchs>
+  <LeftWindowMatchs>343</LeftWindowMatchs>
   <WidthWindowStades>800</WidthWindowStades>
   <HeightWindowStades>200</HeightWindowStades>
   <TopWindowStades>286</TopWindowStades>

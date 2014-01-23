@@ -24,6 +24,7 @@ namespace QuidditchWPF
         public Login()
         {
             InitializeComponent();
+            loginWPF.Focus();
         }
         
         protected void onClickConnexionButton(object sender, RoutedEventArgs e)
@@ -50,8 +51,15 @@ namespace QuidditchWPF
                 MessageBox.Show("Login/Mot de passe incorrect !");
                 loginWPF.Clear();
                 mdpWPF.Clear();
+                loginWPF.Focus();
             }
 #endif
+        }
+
+        private void onKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+                onClickConnexionButton(sender, e);
         }
 
         
