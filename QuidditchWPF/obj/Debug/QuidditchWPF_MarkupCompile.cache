@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\App.xaml
-7-387923829
+91124106993
 
-122045265688
+15-1121159057
 14-262167754
-ListeDesCoupes.xaml;ListeDesEquipes.xaml;ListeDesJoueurs.xaml;ListeDesMatchs.xaml;ListedesStades.xaml;Login.xaml;MainWindow.xaml;
+CtrlReservation.xaml;GestionReservation.xaml;ListeDesCoupes.xaml;ListeDesEquipes.xaml;ListeDesJoueurs.xaml;ListeDesMatchs.xaml;ListedesStades.xaml;Login.xaml;MainWindow.xaml;
 
-False
+True
 

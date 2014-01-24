@@ -90,5 +90,11 @@ namespace QuidditchWPF
             ListeDesMatchs ldm = new ListeDesMatchs(_preferenceUtilisateur);
             ldm.Show();
         }
+
+        private void onClickReservationButton(object sender, RoutedEventArgs e)
+        {
+            GestionReservation gr = new GestionReservation(_preferenceUtilisateur);
+            gr.Show();
+        }
     }
 }

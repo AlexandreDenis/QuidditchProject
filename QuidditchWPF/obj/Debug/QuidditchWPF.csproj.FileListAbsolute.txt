@@ -29,3 +29,9 @@ C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\Quiddi
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListedesStades.g.cs
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesMatchs.baml
 C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\ListeDesMatchs.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\CtrlReservation.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\GestionReservation.baml
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\CtrlReservation.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\GestionReservation.g.cs
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\QuidditchWPF_MarkupCompile.lref
+C:\Users\Alexandre\documents\visual studio 2012\Projects\QuidditchConsole\QuidditchWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -175,6 +175,32 @@ namespace QuidditchWPF
             set { _leftWindowStades = value; }
         }
 
+        /*GestionReservation Window*/
+        private double _widthWindowReservations;
+        public double WidthWindowReservations
+        {
+            get { return _widthWindowReservations; }
+            set { _widthWindowReservations = value; }
+        }
+        private double _heightWindowReservations;
+        public double HeightWindowReservations
+        {
+            get { return _heightWindowReservations; }
+            set { _heightWindowReservations = value; }
+        }
+        private double _topWindowReservations;
+        public double TopWindowReservations
+        {
+            get { return _topWindowReservations; }
+            set { _topWindowReservations = value; }
+        }
+        private double _leftWindowReservations;
+        public double LeftWindowReservations
+        {
+            get { return _leftWindowReservations; }
+            set { _leftWindowReservations = value; }
+        }
+
         public void Save()
         {
             StreamWriter sw = null;
@@ -224,11 +250,15 @@ namespace QuidditchWPF
                 this.HeightWindowMatchs = pref.HeightWindowMatchs;
                 this.WidthWindowMatchs = pref.WidthWindowMatchs;
                 this.TopWindowMatchs = pref.TopWindowMatchs;
-                this.LeftWindowMatchs = pref.LeftWindowMatchs; 
+                this.LeftWindowMatchs = pref.LeftWindowMatchs;
                 this.HeightWindowStades = pref.HeightWindowStades;
                 this.WidthWindowStades = pref.WidthWindowStades;
                 this.TopWindowStades = pref.TopWindowStades;
-                this.LeftWindowStades = pref.LeftWindowStades;
+                this.LeftWindowStades = pref.LeftWindowStades; 
+                this.HeightWindowReservations = pref.HeightWindowReservations;
+                this.WidthWindowReservations = pref.WidthWindowReservations;
+                this.TopWindowReservations = pref.TopWindowReservations;
+                this.LeftWindowReservations = pref.LeftWindowReservations;
             }
             catch (Exception)
             {

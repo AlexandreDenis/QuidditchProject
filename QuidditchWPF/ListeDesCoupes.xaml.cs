@@ -44,7 +44,6 @@ namespace QuidditchWPF
         protected void onClickListBox(object sender, SelectionChangedEventArgs e)
         {
             this.DataContext = ListBoxCoupes.SelectedItem;
-            ListBoxCoupes.DataContext = _listCoupes;
         }
 
         protected override void OnSourceInitialized(EventArgs e)
