@@ -22,5 +22,19 @@ namespace EntitiesLayer
             this.Id = inId;
             nextId++;
 	    }
+
+
+        public override bool Equals(object obj)
+        {
+            if (obj is EntityObject)
+                return this.Id == (obj as EntityObject).Id;
+            else
+                return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Id;
+        }
     }
 }

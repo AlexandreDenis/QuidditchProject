@@ -47,16 +47,14 @@ namespace QuidditchWPF
                 _listMatchsCourant = cp.GetListeMatchsCoupe(_listCoupes[0].Id);
                 listviewMatchs.DataContext = _listMatchsCourant;
                 comboBoxCoupes.SelectedItem = _listCoupes[0];
-                this.DataContext = _listCoupes[0];
-                Grid.DataContext = _listMatchsCourant;
             }
         }
 
         protected void onComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.DataContext = comboBoxCoupes.SelectedItem;
             listviewMatchs.DataContext = cp.GetListeMatchsCoupe(_listCoupes[comboBoxCoupes.SelectedIndex].Id);
-            Grid.DataContext = cp.GetListeMatchsCoupe(_listCoupes[comboBoxCoupes.SelectedIndex].Id)[0];
+            Grid.DataContext = listviewMatchs.SelectedItem;
+            this.DataContext = comboBoxCoupes.SelectedItem;
         }
 
         protected void onListViewSelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -38,11 +38,11 @@
                 <Label Content="Prix :" Grid.Column="0" Grid.Row="1"/>
                 <TextBox Name="inputPrix" Width="410" Text="{Binding Prix}" Grid.Column="1" Grid.Row="1"/>
                 <Label Content="Stade :" Grid.Column="0" Grid.Row="2"/>
-                <ComboBox Name="inputStade" Width="410" Text="{Binding Stade}" Grid.Column="1" Grid.Row="2"/>
+                <ComboBox Name="inputStade" Width="410" SelectedItem="{Binding Stade, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"/>
                 <Label Content="Equipe visiteur :" Grid.Column="0" Grid.Row="3"/>
-                <ComboBox Name="inputEquipeVisiteur" Width="410" Text="{Binding EquipeVisiteur}" Grid.Column="1" Grid.Row="3"/>
+                <ComboBox Name="inputEquipeVisiteur" Width="410" SelectedItem="{Binding EquipeVisiteur}" Grid.Column="1" Grid.Row="3"/>
                 <Label Content="Equipe domicile :" Grid.Column="0" Grid.Row="4"/>
-                <ComboBox Name="inputEquipeDomicile" Width="410" Text="{Binding EquipeDomicile}" Grid.Column="1" Grid.Row="4"/>
+                <ComboBox Name="inputEquipeDomicile" Width="410" SelectedItem="{Binding EquipeDomicile}" Grid.Column="1" Grid.Row="4"/>
                 <Label Content="Score visiteur :" Grid.Column="0" Grid.Row="5"/>
                 <TextBox Name="inputScoreVisiteur" Width="410" Text="{Binding ScoreEquipeVisiteur}" Grid.Column="1" Grid.Row="5"/>
                 <Label Content="Score domicile :" Grid.Column="0" Grid.Row="6"/>
