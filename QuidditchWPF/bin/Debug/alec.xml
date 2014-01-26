@@ -13,10 +13,10 @@
   <HeightWindowEquipes>0</HeightWindowEquipes>
   <TopWindowEquipes>0</TopWindowEquipes>
   <LeftWindowEquipes>0</LeftWindowEquipes>
-  <WidthWindowJoueurs>0</WidthWindowJoueurs>
-  <HeightWindowJoueurs>0</HeightWindowJoueurs>
-  <TopWindowJoueurs>0</TopWindowJoueurs>
-  <LeftWindowJoueurs>0</LeftWindowJoueurs>
+  <WidthWindowJoueurs>850</WidthWindowJoueurs>
+  <HeightWindowJoueurs>500</HeightWindowJoueurs>
+  <TopWindowJoueurs>114</TopWindowJoueurs>
+  <LeftWindowJoueurs>258</LeftWindowJoueurs>
   <WidthWindowMatchs>0</WidthWindowMatchs>
   <HeightWindowMatchs>0</HeightWindowMatchs>
   <TopWindowMatchs>0</TopWindowMatchs>
@@ -25,8 +25,8 @@
   <HeightWindowStades>0</HeightWindowStades>
   <TopWindowStades>0</TopWindowStades>
   <LeftWindowStades>0</LeftWindowStades>
-  <WidthWindowReservations>400</WidthWindowReservations>
-  <HeightWindowReservations>250</HeightWindowReservations>
-  <TopWindowReservations>200</TopWindowReservations>
-  <LeftWindowReservations>466</LeftWindowReservations>
+  <WidthWindowReservations>509</WidthWindowReservations>
+  <HeightWindowReservations>344</HeightWindowReservations>
+  <TopWindowReservations>214</TopWindowReservations>
+  <LeftWindowReservations>473</LeftWindowReservations>
 </PreferenceUtilisateur>

@@ -92,7 +92,7 @@ namespace StubDataAccessLayer
             List<Match> matchs = new List<Match>();
 
             matchs.Add(new Match(30, 33, new DateTime(2014, 2, 18), equipes[0], equipes[1], 25.2, 0, 0, stades[0]));
-            matchs.Add(new Match(31, 33, new DateTime(2014, 6, 25), equipes[1], equipes[2], 100.25, 0, 0, stades[1]));
+            matchs.Add(new Match(31, 34, new DateTime(2014, 6, 25), equipes[1], equipes[2], 100.25, 0, 0, stades[1]));
             matchs.Add(new Match(32, 34, new DateTime(2015, 7, 21), equipes[2], equipes[0], 102, 0, 0, stades[1]));
 
             return matchs;
@@ -118,16 +118,46 @@ namespace StubDataAccessLayer
             return utilisateurs;
         }
 
+        public List<Reservation> GetAllReservations()
+        {
+            List<Reservation> reservations = new List<Reservation>();
+            List<Match> matchs = GetAllMatchs();
+
+            reservations.Add(new Reservation(35, matchs[0], 7, new Spectateur(36, "Weasley", "Ronald", new DateTime(1990, 7, 14), "5 rue des hiboux", "ron.weasley@gmail.com")));
+            reservations.Add(new Reservation(37, matchs[1], 2, new Spectateur(38, "Potter", "Harry", new DateTime(1991, 6, 8), "28 impasse du chaudron", "harry.potter@gmail.com")));
+            reservations.Add(new Reservation(39, matchs[1], 1, new Spectateur(40, "Granger", "Hermione", new DateTime(1989, 2, 25), "9 avenue Dumbledore", "hermione.granger@gmail.com")));
+
+            return reservations;
+        }
+
         public Utilisateur GetUtilsateurByLogin(string inLogin)
         {
             Utilisateur utilReturn = null;
             foreach (Utilisateur utilisateur in GetAllUtilisateurs())
             {
                 if (utilisateur.Login.Equals(inLogin))
+                {
                     utilReturn = utilisateur;
+                    break;
+                }
             }
 
             return utilReturn;
+        }
+
+        public Coupe GetCoupeById(int inId)
+        {
+            Coupe coupeReturn = null;
+            foreach (Coupe coupe in GetAllCoupes())
+            {
+                if (coupe.Id == inId)
+                {
+                    coupeReturn = coupe;
+                    break;
+                }
+            }
+
+            return coupeReturn;
         }
     }
 }

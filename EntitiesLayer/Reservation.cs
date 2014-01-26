@@ -9,7 +9,7 @@ namespace EntitiesLayer
     public class Reservation : EntityObject
     {
         private Match _match;
-        internal Match Match
+        public Match Match
         {
             get { return _match; }
             set { _match = value; }

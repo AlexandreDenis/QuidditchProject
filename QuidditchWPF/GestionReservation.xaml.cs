@@ -13,6 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using BusinessLayer;
+using EntitiesLayer;
+using System.Collections.ObjectModel;
+
 namespace QuidditchWPF
 {
     /// <summary>
@@ -21,12 +25,26 @@ namespace QuidditchWPF
     public partial class GestionReservation : Window
     {
         protected PreferenceUtilisateur _preferenceUtilisateur;
+        protected GestionReservationViewModel _reservations;
+        protected CoupeManager cp;
 
         public GestionReservation(PreferenceUtilisateur prefUser)
         {
             InitializeComponent();
 
             _preferenceUtilisateur = prefUser;
+            cp = new CoupeManager();
+
+            _reservations = new GestionReservationViewModel(new ObservableCollection<Reservation>(cp.GetReservations()));
+            userCtrl.comboCoupes.ItemsSource = cp.GetCoupes();
+            userCtrl.comboMatchs.ItemsSource = cp.GetMatchs();
+
+            listViewReservations.DataContext = _reservations.Reservations;
+
+            if (_reservations.Reservations.Count > 0)
+            {
+                userCtrl.DataContext = _reservations.Reservations[0];
+            }
         }
 
         protected override void OnSourceInitialized(EventArgs e)
@@ -60,6 +78,11 @@ namespace QuidditchWPF
             _preferenceUtilisateur.Save();
 
             base.OnClosing(e);
+        }
+
+        private void onClickListview(object sender, SelectionChangedEventArgs e)
+        {
+            userCtrl.DataContext = listViewReservations.SelectedItem;
         }
     }
 }

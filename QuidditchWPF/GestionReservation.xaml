@@ -3,20 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:QuidditchWPF"
         Title="Gestion des Réservations"
-        MinHeight="280" MinWidth="400"
-        Height="280" Width="400"
+        MinHeight="300" MinWidth="420"
+        Height="280" Width="480"
         WindowStartupLocation="CenterScreen">
     <StackPanel Orientation="Horizontal">
-        <ListView Name="ListBoxCoupes"  MinWidth="100" ItemsSource="{Binding }">
+        <ListView Name="listViewReservations"  ItemsSource="{Binding}" MinWidth="100" SelectionChanged="onClickListview">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Réservation" />
+                    <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Path=Nom}"/>
+                    <GridViewColumn Header="Match" DisplayMemberBinding="{Binding Path=Match}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Orientation="Vertical" MinWidth="296">
-            <Label TextElement.FontSize="24" Content="Fiche du joueur" HorizontalAlignment="Center"/>
-            <controls:CtrlReservation />
+            <Label TextElement.FontSize="24" Content="Fiche de réservation" HorizontalAlignment="Center"/>
+            <controls:CtrlReservation x:Name="userCtrl"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button Name="Supprimer" Content="Supprimer"/>
                 <Button Name="Modifier" Content="Modifier"/>

@@ -81,7 +81,7 @@ namespace EntitiesLayer
         {
             StringBuilder res = new StringBuilder();
 
-            res.Append("Match ");
+            /*res.Append("Match ");
             res.Append(Id);
             res.Append(" -> ");
             res.Append("Coupe ");
@@ -103,7 +103,15 @@ namespace EntitiesLayer
             res.Append(" | Stade : ");
             res.Append(Stade.Id);
             res.Append("\n");
-            res.Append("\n");
+            res.Append("\n");*/
+
+            res.Append("#");
+            res.Append(Id);
+            res.Append(" - ");
+            res.Append(String.Format("{0:dd/MM/yy}", Date));
+            /*res.Append(EquipeDomicile);
+            res.Append(" VS ");
+            res.Append(EquipeVisiteur);*/
 
             return res.ToString();
         }

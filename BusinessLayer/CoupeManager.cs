@@ -47,9 +47,20 @@ namespace BusinessLayer
             return _manager.GetAllMatchs();
         }
 
+        /*renvoie l'utilisateur correspondant au login*/
         public Utilisateur GetUser(string inLogin)
         {
             return _manager.GetUtilsateurByLogin(inLogin);
+        }
+
+        public List<Reservation> GetReservations()
+        {
+            return _manager.GetAllReservations();
+        }
+
+        public Coupe GetCoupeById(int inId)
+        {
+            return _manager.GetCoupeById(inId);
         }
 
         /*retourne la liste des matchs prévus classés par date*/
