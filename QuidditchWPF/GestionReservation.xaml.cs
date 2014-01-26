@@ -27,6 +27,7 @@ namespace QuidditchWPF
         protected PreferenceUtilisateur _preferenceUtilisateur;
         protected GestionReservationViewModel _reservations;
         protected CoupeManager cp;
+        protected List<Coupe> _listCoupes;
 
         public GestionReservation(PreferenceUtilisateur prefUser)
         {
@@ -35,9 +36,10 @@ namespace QuidditchWPF
             _preferenceUtilisateur = prefUser;
             cp = new CoupeManager();
 
+            _listCoupes = cp.GetCoupes();
+
             _reservations = new GestionReservationViewModel(new ObservableCollection<Reservation>(cp.GetReservations()));
-            userCtrl.comboCoupes.ItemsSource = cp.GetCoupes();
-            userCtrl.comboMatchs.ItemsSource = cp.GetMatchs();
+            userCtrl.comboCoupes.ItemsSource = _listCoupes;
 
             listViewReservations.DataContext = _reservations.Reservations;
 
@@ -45,6 +47,9 @@ namespace QuidditchWPF
             {
                 userCtrl.DataContext = _reservations.Reservations[0];
             }
+
+            if(_listCoupes.Count > 0)
+                userCtrl.comboMatchs.ItemsSource = cp.GetListeMatchsCoupe(_listCoupes[0].Id);
         }
 
         protected override void OnSourceInitialized(EventArgs e)

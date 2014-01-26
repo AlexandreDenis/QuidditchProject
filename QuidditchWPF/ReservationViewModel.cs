@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using EntitiesLayer;
 using BusinessLayer;
+using System.ComponentModel;
 
 namespace QuidditchWPF
 {
@@ -38,6 +39,7 @@ namespace QuidditchWPF
             set
             {
                 _reservation.Match = value;
+                OnPropertyChanged("Prix");
             }
         }
 
@@ -80,6 +82,7 @@ namespace QuidditchWPF
             set
             {
                 _reservation.NombrePlacesReservees = value;
+                OnPropertyChanged("Prix");
                 
             }
         }
@@ -90,7 +93,7 @@ namespace QuidditchWPF
             {
                 double res = _reservation.NombrePlacesReservees * _reservation.Match.Prix;
                 res += res * _reservation.Match.Stade.PourcentageCommission / 100;
-                OnPropertyChanged("Prix");
+                res = Convert.ToDouble(string.Format("{0:0.00}", res));
                 return res;
             }
         }
