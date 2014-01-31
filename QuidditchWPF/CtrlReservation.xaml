@@ -21,15 +21,15 @@
         </Grid.ColumnDefinitions>
 
         <Label Name="labelCoupe" Content="Coupe :" Grid.Row="0" Grid.Column="0"/>
-        <ComboBox Name="comboCoupes" SelectedItem="{Binding Coupe, Mode=OneWay}" Grid.Row="0" Grid.Column="1"/>
+        <ComboBox Name="comboCoupes" Grid.Row="0" Grid.Column="1" SelectionChanged="comboCoupes_SelectionChanged"/>
         <Label Name="labelMatch" Content="Match :" Grid.Row="1" Grid.Column="0"/>
         <ComboBox Name="comboMatchs" SelectedItem="{Binding Match}" Grid.Row="1" Grid.Column="1"/>
         <Label Name="labelNom" Content="Nom :" Grid.Row="2" Grid.Column="0"/>
         <TextBox Name="inputNom" Text="{Binding Nom}" Grid.Row="2" Grid.Column="1"/>
         <Label Name="labelPrenom" Content="Prénom :" Grid.Row="3" Grid.Column="0" />
-        <TextBox Name="inputPrenom" Text="{Binding Prenom, Mode=OneWay}" Grid.Row="3" Grid.Column="1" IsEnabled="False"/>
+        <TextBox Name="inputPrenom" Text="{Binding Prenom}" Grid.Row="3" Grid.Column="1"/>
         <Label Name="labelAdresse" Content="Adresse :" Grid.Row="4" Grid.Column="0"/>
-        <TextBox Name="inputAdresse" Text="{Binding Adresse, Mode=OneWay}" Grid.Row="4" Grid.Column="1" IsEnabled="False"/>
+        <TextBox Name="inputAdresse" Text="{Binding Adresse}" Grid.Row="4" Grid.Column="1"/>
         <Label Name="labelPlaces" Content="Places :" Grid.Row="5" Grid.Column="0"/>
         <TextBox Name="inputNPR" Text="{Binding NbPlaces}" Grid.Row="5" Grid.Column="1"/>
         <Label Name="labelPrix" Content="Prix :" Grid.Row="6" Grid.Column="0"/>

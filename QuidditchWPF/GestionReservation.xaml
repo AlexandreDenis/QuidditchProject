@@ -3,15 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:QuidditchWPF"
         Title="Gestion des Réservations"
-        MinHeight="300" MinWidth="420"
-        Height="280" Width="480"
+        MinHeight="310" MinWidth="565"
+        Height="310" Width="565"
         WindowStartupLocation="CenterScreen">
     <StackPanel Orientation="Horizontal">
         <ListView Name="listViewReservations"  ItemsSource="{Binding}" MinWidth="100" SelectionChanged="onClickListview">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Path=Nom}"/>
-                    <GridViewColumn Header="Match" DisplayMemberBinding="{Binding Path=Match}"/>
+                    <GridViewColumn Header="Match" DisplayMemberBinding="{Binding Path=Match.Id}"/>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Path=Match.Date}"/>
                 </GridView>
             </ListView.View>
         </ListView>

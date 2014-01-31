@@ -21,11 +21,27 @@ namespace QuidditchWPF
             set { _reservation = value; }
         }
 
-        public Coupe Coupe
+        public int CoupeId
         {
+            /*get
+            {
+                if (_reservation.Match != null)
+                    return cp.GetCoupeById(_reservation.Match.CoupeId);
+                else
+                    return null;
+            }
+
+            set
+            {
+                _reservation.Match.CoupeId = value.Id;
+            }*/
             get
             {
-                return cp.GetCoupeById(_reservation.Match.CoupeId);
+                return _reservation.Match.CoupeId;
+            }
+            set
+            {
+                _reservation.Match.CoupeId = value;
             }
         }
 
@@ -33,13 +49,14 @@ namespace QuidditchWPF
         {
             get
             {
-                return _reservation.Match;
+                return _reservation.Match; 
             }
 
             set
             {
                 _reservation.Match = value;
                 OnPropertyChanged("Prix");
+                OnPropertyChanged("Match");
             }
         }
 
@@ -62,6 +79,10 @@ namespace QuidditchWPF
             {
                 return _reservation.Spectateur.Prenom;
             }
+            set
+            {
+                _reservation.Spectateur.Prenom = value;
+            }
         }
 
         public string Adresse
@@ -69,6 +90,10 @@ namespace QuidditchWPF
             get
             {
                 return _reservation.Spectateur.Adresse;
+            }
+            set
+            {
+                _reservation.Spectateur.Adresse = value;
             }
         }
 
@@ -91,8 +116,12 @@ namespace QuidditchWPF
         {
             get
             {
-                double res = _reservation.NombrePlacesReservees * _reservation.Match.Prix;
-                res += res * _reservation.Match.Stade.PourcentageCommission / 100;
+                double res = 0;
+                if (_reservation.Match != null)
+                {
+                    res = _reservation.NombrePlacesReservees * _reservation.Match.Prix;
+                    res += res * _reservation.Match.Stade.PourcentageCommission / 100;
+                }
                 res = Convert.ToDouble(string.Format("{0:0.00}", res));
                 return res;
             }

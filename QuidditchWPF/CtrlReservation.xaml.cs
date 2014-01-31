@@ -24,5 +24,13 @@ namespace QuidditchWPF
         {
             InitializeComponent();
         }
+
+        public event EventHandler CoupesChanged;
+
+        private void comboCoupes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.CoupesChanged != null)
+                this.CoupesChanged(new object(), new EventArgs());
+        }
     }
 }

@@ -1,5 +1,4 @@
 C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\Alexandre\Documents\Visual Studio 2012\Projects\QuidditchConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb

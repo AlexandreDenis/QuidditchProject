@@ -104,12 +104,12 @@ namespace QuidditchConsole
                             continue;
                         }
 
-                        lstrings = cp.GetListeMatchsCoupe(choix);
+                        lmatchs = cp.GetListeMatchsCoupe(choix);
 
-                        if (lstrings != null)
+                        if (lmatchs != null)
                         {
                             Console.WriteLine("Liste des matchs prévus pour la coupe " + choix + " :");
-                            foreach (string s in lstrings)
+                            foreach (Match s in lmatchs)
                                 Console.WriteLine(s);
                         }
                         else
