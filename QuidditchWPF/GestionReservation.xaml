@@ -19,10 +19,10 @@
         <StackPanel Orientation="Vertical" MinWidth="296">
             <Label TextElement.FontSize="24" Content="Fiche de réservation" HorizontalAlignment="Center"/>
             <controls:CtrlReservation x:Name="userCtrl"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Name="Supprimer" Content="Supprimer"/>
-                <Button Name="Modifier" Content="Modifier"/>
-                <Button Name="Ajouter" Content="Ajouter"/>
+            <StackPanel Name="buttons" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="Supprimer" Content="Supprimer" Command="{Binding suppCommande}"/>
+                <Button Name="Modifier" Content="Modifier" Command="{Binding modifCommande}"/>
+                <Button Name="Ajouter" Content="Ajouter" Command="{Binding ajoutCommande}"/>
             </StackPanel>
         </StackPanel>
     </StackPanel>

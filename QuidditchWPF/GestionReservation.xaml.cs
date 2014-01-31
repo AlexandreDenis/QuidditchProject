@@ -48,10 +48,16 @@ namespace QuidditchWPF
                 userCtrl.DataContext = _reservations.Reservations[0];
             }*/
 
-            /*if(_listCoupes.Count > 0)
-                userCtrl.comboMatchs.ItemsSource = cp.GetListeMatchsCoupe(_listCoupes[0].Id);*/
+            if(_listCoupes.Count > 0)
+                userCtrl.comboMatchs.ItemsSource = cp.GetListeMatchsCoupe(_listCoupes[0].Id);
+
+            userCtrl.comboCoupes.SelectedItem = cp.GetCoupeById(_reservations.Reservations[0].CoupeId);
+            userCtrl.DataContext = _reservations.Reservations[0];
+            _reservations.SelectedReservation = _reservations.Reservations[0];
 
             userCtrl.CoupesChanged += new EventHandler(EventHandler_CoupesChanged);
+
+            buttons.DataContext = _reservations;
         }
 
         public void EventHandler_CoupesChanged(object sender, EventArgs e)
@@ -103,8 +109,14 @@ namespace QuidditchWPF
 
         private void onClickListview(object sender, SelectionChangedEventArgs e)
         {
-            userCtrl.DataContext = listViewReservations.SelectedItem;
-            userCtrl.comboCoupes.SelectedItem = cp.GetCoupeById(_reservations.Reservations[listViewReservations.SelectedIndex].CoupeId);
+            if (_reservations.Count() > 0)
+            {
+                if (listViewReservations.SelectedItem == null)
+                    listViewReservations.SelectedIndex = 0;
+                userCtrl.DataContext = listViewReservations.SelectedItem;
+                _reservations.SelectedReservation = _reservations.Reservations[listViewReservations.SelectedIndex];
+                userCtrl.comboCoupes.SelectedItem = cp.GetCoupeById(_reservations.Reservations[listViewReservations.SelectedIndex].CoupeId);
+            }
         }
     }
 }

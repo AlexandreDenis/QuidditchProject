@@ -70,6 +70,7 @@ namespace QuidditchWPF
             set
             {
                 _reservation.Spectateur.Nom = value;
+                OnPropertyChanged("Nom");
             }
         }
 
