@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.Windows;
 
 namespace QuidditchWPF
 {
@@ -69,6 +70,12 @@ namespace QuidditchWPF
             get { return _leftWindowCoupes; }
             set { _leftWindowCoupes = value; }
         }
+        private WindowState _windowStateCoupes;
+        public WindowState WindowStateCoupes
+        {
+            get { return _windowStateCoupes; }
+            set { _windowStateCoupes = value; }
+        }
 
         /*ListeDesEquipes Window*/
         private double _widthWindowEquipes;
@@ -94,6 +101,12 @@ namespace QuidditchWPF
         {
             get { return _leftWindowEquipes; }
             set { _leftWindowEquipes = value; }
+        }
+        private WindowState _windowStateEquipes;
+        public WindowState WindowStateEquipes
+        {
+            get { return _windowStateEquipes; }
+            set { _windowStateEquipes = value; }
         }
 
         /*ListeDesJoueurs Window*/
@@ -121,6 +134,12 @@ namespace QuidditchWPF
             get { return _leftWindowJoueurs; }
             set { _leftWindowJoueurs = value; }
         }
+        private WindowState _windowStateJoueurs;
+        public WindowState WindowStateJoueurs
+        {
+            get { return _windowStateJoueurs; }
+            set { _windowStateJoueurs = value; }
+        }
 
         /*ListeDesMatchs Window*/
         private double _widthWindowMatchs;
@@ -146,6 +165,12 @@ namespace QuidditchWPF
         {
             get { return _leftWindowMatchs; }
             set { _leftWindowMatchs = value; }
+        }
+        private WindowState _windowStateMatchs;
+        public WindowState WindowStateMatchs
+        {
+            get { return _windowStateMatchs; }
+            set { _windowStateMatchs = value; }
         }
 
 
@@ -174,6 +199,12 @@ namespace QuidditchWPF
             get { return _leftWindowStades; }
             set { _leftWindowStades = value; }
         }
+        private WindowState _windowStateStades;
+        public WindowState WindowStateStades
+        {
+            get { return _windowStateStades; }
+            set { _windowStateStades = value; }
+        }
 
         /*GestionReservation Window*/
         private double _widthWindowReservations;
@@ -199,6 +230,12 @@ namespace QuidditchWPF
         {
             get { return _leftWindowReservations; }
             set { _leftWindowReservations = value; }
+        }
+        private WindowState _windowStateReservations;
+        public WindowState WindowStateReservations
+        {
+            get { return _windowStateReservations; }
+            set { _windowStateReservations = value; }
         }
 
         public void Save()
@@ -231,34 +268,47 @@ namespace QuidditchWPF
                 sr = new StreamReader(_login + ".xml");
                 XmlSerializer serializer = new XmlSerializer(typeof(PreferenceUtilisateur));
                 PreferenceUtilisateur pref = (PreferenceUtilisateur)serializer.Deserialize(sr);
+
                 this.HeightWindow = pref.HeightWindow;
                 this.WidthWindow = pref.WidthWindow;
                 this.TopWindow = pref.TopWindow;
                 this.LeftWindow = pref.LeftWindow;
+
                 this.HeightWindowCoupes = pref.HeightWindowCoupes;
                 this.WidthWindowCoupes = pref.WidthWindowCoupes;
                 this.TopWindowCoupes = pref.TopWindowCoupes;
                 this.LeftWindowCoupes = pref.LeftWindowCoupes;
+                this.WindowStateCoupes = pref.WindowStateCoupes;
+
                 this.HeightWindowEquipes = pref.HeightWindowEquipes;
                 this.WidthWindowEquipes = pref.WidthWindowEquipes;
                 this.TopWindowEquipes = pref.TopWindowEquipes;
                 this.LeftWindowEquipes = pref.LeftWindowEquipes;
+                this.WindowStateEquipes = pref.WindowStateEquipes;
+
                 this.HeightWindowJoueurs = pref.HeightWindowJoueurs;
                 this.WidthWindowJoueurs = pref.WidthWindowJoueurs;
                 this.TopWindowJoueurs = pref.TopWindowJoueurs;
                 this.LeftWindowJoueurs = pref.LeftWindowJoueurs;
+                this.WindowStateJoueurs = pref.WindowStateJoueurs;
+
                 this.HeightWindowMatchs = pref.HeightWindowMatchs;
                 this.WidthWindowMatchs = pref.WidthWindowMatchs;
                 this.TopWindowMatchs = pref.TopWindowMatchs;
                 this.LeftWindowMatchs = pref.LeftWindowMatchs;
+                this.WindowStateMatchs = pref.WindowStateMatchs;
+
                 this.HeightWindowStades = pref.HeightWindowStades;
                 this.WidthWindowStades = pref.WidthWindowStades;
                 this.TopWindowStades = pref.TopWindowStades;
-                this.LeftWindowStades = pref.LeftWindowStades; 
+                this.LeftWindowStades = pref.LeftWindowStades;
+                this.WindowStateStades = pref.WindowStateStades;
+
                 this.HeightWindowReservations = pref.HeightWindowReservations;
                 this.WidthWindowReservations = pref.WidthWindowReservations;
                 this.TopWindowReservations = pref.TopWindowReservations;
                 this.LeftWindowReservations = pref.LeftWindowReservations;
+                this.WindowStateReservations = pref.WindowStateReservations;
             }
             catch (Exception)
             {

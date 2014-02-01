@@ -55,6 +55,7 @@ namespace QuidditchWPF
             set
             {
                 _reservation.Match = value;
+                OnPropertyChanged("PrixUnite");
                 OnPropertyChanged("Prix");
                 OnPropertyChanged("Match");
             }
@@ -124,6 +125,22 @@ namespace QuidditchWPF
                     res += res * _reservation.Match.Stade.PourcentageCommission / 100;
                 }
                 res = Convert.ToDouble(string.Format("{0:0.00}", res));
+                return res;
+            }
+        }
+
+        public double PrixUnite
+        {
+            get
+            {
+                double res = 0;
+                if (_reservation.Match != null)
+                {
+                    res = _reservation.Match.Prix;
+                    res += res * _reservation.Match.Stade.PourcentageCommission / 100;
+                    res = Convert.ToDouble(string.Format("{0:0.00}", res));
+                }
+
                 return res;
             }
         }

@@ -3,30 +3,36 @@
   <Login>alec</Login>
   <WidthWindow>525</WidthWindow>
   <HeightWindow>350</HeightWindow>
-  <TopWindow>189</TopWindow>
-  <LeftWindow>421</LeftWindow>
-  <WidthWindowCoupes>0</WidthWindowCoupes>
-  <HeightWindowCoupes>0</HeightWindowCoupes>
-  <TopWindowCoupes>0</TopWindowCoupes>
-  <LeftWindowCoupes>0</LeftWindowCoupes>
+  <TopWindow>199</TopWindow>
+  <LeftWindow>408</LeftWindow>
+  <WidthWindowCoupes>800</WidthWindowCoupes>
+  <HeightWindowCoupes>200</HeightWindowCoupes>
+  <TopWindowCoupes>27</TopWindowCoupes>
+  <LeftWindowCoupes>-16</LeftWindowCoupes>
+  <WindowStateCoupes>Normal</WindowStateCoupes>
   <WidthWindowEquipes>400</WidthWindowEquipes>
-  <HeightWindowEquipes>400</HeightWindowEquipes>
-  <TopWindowEquipes>164</TopWindowEquipes>
-  <LeftWindowEquipes>483</LeftWindowEquipes>
+  <HeightWindowEquipes>200</HeightWindowEquipes>
+  <TopWindowEquipes>35</TopWindowEquipes>
+  <LeftWindowEquipes>948</LeftWindowEquipes>
+  <WindowStateEquipes>Normal</WindowStateEquipes>
   <WidthWindowJoueurs>850</WidthWindowJoueurs>
-  <HeightWindowJoueurs>500</HeightWindowJoueurs>
-  <TopWindowJoueurs>114</TopWindowJoueurs>
-  <LeftWindowJoueurs>258</LeftWindowJoueurs>
+  <HeightWindowJoueurs>270</HeightWindowJoueurs>
+  <TopWindowJoueurs>225</TopWindowJoueurs>
+  <LeftWindowJoueurs>4</LeftWindowJoueurs>
+  <WindowStateJoueurs>Normal</WindowStateJoueurs>
   <WidthWindowMatchs>850</WidthWindowMatchs>
   <HeightWindowMatchs>500</HeightWindowMatchs>
-  <TopWindowMatchs>114</TopWindowMatchs>
-  <LeftWindowMatchs>258</LeftWindowMatchs>
+  <TopWindowMatchs>260</TopWindowMatchs>
+  <LeftWindowMatchs>17</LeftWindowMatchs>
+  <WindowStateMatchs>Maximized</WindowStateMatchs>
   <WidthWindowStades>800</WidthWindowStades>
-  <HeightWindowStades>500</HeightWindowStades>
-  <TopWindowStades>114</TopWindowStades>
-  <LeftWindowStades>283</LeftWindowStades>
-  <WidthWindowReservations>565</WidthWindowReservations>
+  <HeightWindowStades>242</HeightWindowStades>
+  <TopWindowStades>417</TopWindowStades>
+  <LeftWindowStades>543</LeftWindowStades>
+  <WindowStateStades>Normal</WindowStateStades>
+  <WidthWindowReservations>580</WidthWindowReservations>
   <HeightWindowReservations>310</HeightWindowReservations>
-  <TopWindowReservations>205</TopWindowReservations>
-  <LeftWindowReservations>417</LeftWindowReservations>
+  <TopWindowReservations>275</TopWindowReservations>
+  <LeftWindowReservations>466</LeftWindowReservations>
+  <WindowStateReservations>Normal</WindowStateReservations>
 </PreferenceUtilisateur>

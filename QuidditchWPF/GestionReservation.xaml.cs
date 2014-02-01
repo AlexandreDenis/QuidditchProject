@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using BusinessLayer;
 using EntitiesLayer;
 using System.Collections.ObjectModel;
+using System.Windows.Forms;
 
 namespace QuidditchWPF
 {
@@ -28,10 +29,13 @@ namespace QuidditchWPF
         protected GestionReservationViewModel _reservations;
         protected CoupeManager cp;
         protected List<Coupe> _listCoupes;
+        private MainWindow _mainWindow;
 
-        public GestionReservation(PreferenceUtilisateur prefUser)
+        public GestionReservation(PreferenceUtilisateur prefUser, MainWindow mainWindow)
         {
             InitializeComponent();
+
+            _mainWindow = mainWindow;
 
             _preferenceUtilisateur = prefUser;
             cp = new CoupeManager();
@@ -82,6 +86,7 @@ namespace QuidditchWPF
 
                 if (_preferenceUtilisateur.HeightWindowReservations != 0 && _preferenceUtilisateur.WidthWindowReservations != 0)
                 {
+                    this.WindowState = _preferenceUtilisateur.WindowStateReservations;
                     this.Height = _preferenceUtilisateur.HeightWindowReservations;
                     this.Width = _preferenceUtilisateur.WidthWindowReservations;
                     this.Top = _preferenceUtilisateur.TopWindowReservations;
@@ -98,11 +103,15 @@ namespace QuidditchWPF
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
+            _preferenceUtilisateur.WindowStateReservations = this.WindowState;
+            this.WindowState = (WindowState)FormWindowState.Normal;
             _preferenceUtilisateur.WidthWindowReservations = this.ActualWidth;
             _preferenceUtilisateur.HeightWindowReservations = this.ActualHeight;
             _preferenceUtilisateur.TopWindowReservations = this.Top;
             _preferenceUtilisateur.LeftWindowReservations = this.Left;
             _preferenceUtilisateur.Save();
+
+            _mainWindow.IsEnabled = true;
 
             base.OnClosing(e);
         }

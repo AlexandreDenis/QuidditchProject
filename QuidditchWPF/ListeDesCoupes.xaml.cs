@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 using System.IO;
 
 using BusinessLayer;
@@ -25,10 +26,13 @@ namespace QuidditchWPF
     {
         protected List<Coupe> _listCoupes;
         protected PreferenceUtilisateur _preferenceUtilisateur;
+        private MainWindow _mainWindow;
 
-        public ListeDesCoupes(PreferenceUtilisateur prefUser)
+        public ListeDesCoupes(PreferenceUtilisateur prefUser, MainWindow mainWindow)
         {
             InitializeComponent();
+
+            _mainWindow = mainWindow;
 
             _preferenceUtilisateur = prefUser;
 
@@ -54,6 +58,7 @@ namespace QuidditchWPF
 
                 if (_preferenceUtilisateur.HeightWindowCoupes != 0 && _preferenceUtilisateur.WidthWindowCoupes != 0)
                 {
+                    this.WindowState = _preferenceUtilisateur.WindowStateCoupes;
                     this.Height = _preferenceUtilisateur.HeightWindowCoupes;
                     this.Width = _preferenceUtilisateur.WidthWindowCoupes;
                     this.Top = _preferenceUtilisateur.TopWindowCoupes;
@@ -70,11 +75,15 @@ namespace QuidditchWPF
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
+            _preferenceUtilisateur.WindowStateCoupes = this.WindowState;
+            this.WindowState = (WindowState)FormWindowState.Normal;
             _preferenceUtilisateur.WidthWindowCoupes = this.ActualWidth;
             _preferenceUtilisateur.HeightWindowCoupes = this.ActualHeight;
             _preferenceUtilisateur.TopWindowCoupes = this.Top;
             _preferenceUtilisateur.LeftWindowCoupes = this.Left;
             _preferenceUtilisateur.Save();
+
+            _mainWindow.IsEnabled = true;
 
             base.OnClosing(e);
         }

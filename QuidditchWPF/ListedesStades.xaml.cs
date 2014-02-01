@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 using System.IO;
 
 using BusinessLayer;
@@ -25,10 +26,13 @@ namespace QuidditchWPF
     {
         protected List<Stade> _listStades;
         protected PreferenceUtilisateur _preferenceUtilisateur;
+        private MainWindow _mainWindow;
 
-        public ListedesStades(PreferenceUtilisateur prefUser)
+        public ListedesStades(PreferenceUtilisateur prefUser, MainWindow mainWindow)
         {
             InitializeComponent();
+
+            _mainWindow = mainWindow;
 
             _preferenceUtilisateur = prefUser;
 
@@ -55,6 +59,7 @@ namespace QuidditchWPF
 
                 if (_preferenceUtilisateur.HeightWindowStades != 0 && _preferenceUtilisateur.WidthWindowStades != 0)
                 {
+                    this.WindowState = _preferenceUtilisateur.WindowStateStades;
                     this.Height = _preferenceUtilisateur.HeightWindowStades;
                     this.Width = _preferenceUtilisateur.WidthWindowStades;
                     this.Top = _preferenceUtilisateur.TopWindowStades;
@@ -71,11 +76,15 @@ namespace QuidditchWPF
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
+            _preferenceUtilisateur.WindowStateStades = this.WindowState;
+            this.WindowState = (WindowState)FormWindowState.Normal;
             _preferenceUtilisateur.WidthWindowStades = this.ActualWidth;
             _preferenceUtilisateur.HeightWindowStades = this.ActualHeight;
             _preferenceUtilisateur.TopWindowStades = this.Top;
             _preferenceUtilisateur.LeftWindowStades = this.Left;
             _preferenceUtilisateur.Save();
+
+            _mainWindow.IsEnabled = true;
 
             base.OnClosing(e);
         }

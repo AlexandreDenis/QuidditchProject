@@ -14,6 +14,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -32,7 +33,9 @@
         <TextBox Name="inputAdresse" Text="{Binding Adresse}" Grid.Row="4" Grid.Column="1"/>
         <Label Name="labelPlaces" Content="Places :" Grid.Row="5" Grid.Column="0"/>
         <TextBox Name="inputNPR" Text="{Binding NbPlaces}" Grid.Row="5" Grid.Column="1"/>
-        <Label Name="labelPrix" Content="Prix :" Grid.Row="6" Grid.Column="0"/>
-        <Label Name="affichagePrix" Grid.Row="6" Grid.Column="1" Content="{Binding Prix}"/>
+        <Label Name="prixUnite" Grid.Row="6" Grid.Column="0" Content="Prix du billet :"/>
+        <Label Name="affichagePrixUnite" Grid.Row="6" Grid.Column="1" Content="{Binding PrixUnite}"/>
+        <Label Name="labelPrix" Content="Prix :" Grid.Row="7" Grid.Column="0"/>
+        <Label Name="affichagePrix" Grid.Row="7" Grid.Column="1" Content="{Binding Prix}"/>
     </Grid>
 </UserControl>

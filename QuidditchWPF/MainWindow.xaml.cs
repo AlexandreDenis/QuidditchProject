@@ -25,6 +25,13 @@ namespace QuidditchWPF
 
         private string currentUser;
 
+        private ListeDesCoupes ldc;
+        private ListeDesJoueurs ldj;
+        private ListeDesEquipes lde;
+        private ListedesStades lds;
+        private ListeDesMatchs ldm;
+        private GestionReservation gr;
+
         public MainWindow(string inLogin)
         {
             InitializeComponent();
@@ -57,43 +64,67 @@ namespace QuidditchWPF
             _preferenceUtilisateur.TopWindow = this.Top;
             _preferenceUtilisateur.LeftWindow = this.Left;
             _preferenceUtilisateur.Save();
+
+            if (ldc != null)
+                ldc.Close();
+
+            if (ldj != null)
+                ldj.Close();
+
+            if (lde != null)
+                lde.Close();
+
+            if (lds != null)
+                lds.Close();
+
+            if (ldm != null)
+                ldm.Close();
+
+            if (gr != null)
+                gr.Close();
             
             base.OnClosing(e);
         }
 
         protected void onClickCoupesButton(object sender, RoutedEventArgs e)
         {
-            ListeDesCoupes ldc = new ListeDesCoupes(_preferenceUtilisateur);
+            ldc = new ListeDesCoupes(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             ldc.Show();
         }
 
         protected void onClickJoueursButton(object sender, RoutedEventArgs e)
         {
-            ListeDesJoueurs ldj = new ListeDesJoueurs(_preferenceUtilisateur);
+            ldj = new ListeDesJoueurs(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             ldj.Show();
         }
 
         private void onClickEquipesButton(object sender, RoutedEventArgs e)
         {
-            ListeDesEquipes lde = new ListeDesEquipes(_preferenceUtilisateur);
+            lde = new ListeDesEquipes(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             lde.Show();
         }
 
         private void onClickStadesButton(object sender, RoutedEventArgs e)
         {
-            ListedesStades lds = new ListedesStades(_preferenceUtilisateur);
+            lds = new ListedesStades(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             lds.Show();
         }
 
         private void onClickMatchsButton(object sender, RoutedEventArgs e)
         {
-            ListeDesMatchs ldm = new ListeDesMatchs(_preferenceUtilisateur);
+            ldm = new ListeDesMatchs(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             ldm.Show();
         }
 
         private void onClickReservationButton(object sender, RoutedEventArgs e)
         {
-            GestionReservation gr = new GestionReservation(_preferenceUtilisateur);
+            gr = new GestionReservation(_preferenceUtilisateur, this);
+            this.IsEnabled = false;
             gr.Show();
         }
     }

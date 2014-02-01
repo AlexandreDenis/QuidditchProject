@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:QuidditchWPF"
         Title="Gestion des Réservations"
-        MinHeight="310" MinWidth="565"
-        Height="310" Width="565"
+        MinHeight="310" MinWidth="580"
+        Height="310" Width="580"
         WindowStartupLocation="CenterScreen">
     <StackPanel Orientation="Horizontal">
         <ListView Name="listViewReservations"  ItemsSource="{Binding}" MinWidth="100" SelectionChanged="onClickListview">
